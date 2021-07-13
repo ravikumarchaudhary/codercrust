@@ -682,9 +682,13 @@ header button:hover {
   .head {
     margin: 0;
   }
+  .dropdown-item {
+  white-space: normal;
+  } 
+  /*
   .grid-container {
     grid-template-columns: 150px 150px;
-  }
+  }*/
   .wrapper1 {
     padding: 0;
   }
