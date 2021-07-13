@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+	<style>	
+	body{
+ background-image: url(img1.jpg);
+}
+	    
+ .contactform h4{
+	background: #43D1AF;
+	padding: 20px 0;
+	font-size: 140%;
+	font-weight: 300;
+	text-align: center;
+	color: #fff;
+	margin: -16px -16px 16px -16px;
+}
+.contactform input[type="text"],
+.contactform input[type="date"],
+.contactform input[type="datetime"],
+.contactform input[type="email"],
+.contactform input[type="number"],
+.contactform input[type="search"],
+.contactform input[type="time"],
+.contactform input[type="url"],
+.contactform textarea,
+.contactform select 
+{
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	-ms-transition: all 0.30s ease-in-out;
+	-o-transition: all 0.30s ease-in-out;
+	outline: none;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 4%;
+	border: 1px solid #ccc;
+	padding: 3%;
+	color: black;
+	font: 95% Arial, Helvetica, sans-serif;
+}
+.contactform input[type="text"]:focus,
+.contactform input[type="date"]:focus,
+.contactform input[type="datetime"]:focus,
+.contactform input[type="email"]:focus,
+.contactform input[type="number"]:focus,
+.contactform input[type="search"]:focus,
+.contactform input[type="time"]:focus,
+.contactform input[type="url"]:focus,
+.contactform textarea:focus,
+.contactform select:focus
+{
+	box-shadow: 0 0 5px blue;
+	padding: 3%;
+	border: 1px solid white;
+}
+
+.contactform input[type="submit"],
+.contactform input[type="button"]{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	width: 100%;
+	padding: 3%;
+	background: #0088a9;
+	border-bottom: 2px solid white;
+	border-top-style: none;
+	border-right-style: none;
+	border-left-style: none;	
+	color: #fff;
+}
+.contactform input[type="submit"]:hover,
+.contactform input[type="button"]:hover{
+	background: #24252a;
+	}
+.contactform
+	 {
+	font: 95% Arial, Helvetica, sans-serif;
+	
+	max-width: 400px;
+	margin: 10px auto;
+	padding: 16px;
+	background: #F7F7F7;
+	
+	
+	}
+.contact-details{
+ position: center ;
+ left:5;
+ color:white;
+
+
+}
+.rounded{
+ border-top: 2px solid #bbb;
+  border-radius: 1px;
+  /*align:center;
+width:50%;*/
+ 
+ 
+ 
+
+
+
+	
+       	
+	</style>
+</head>
+<body> 
+	<header>
+                <img class="logo" alt="logo" src="logo.jpeg">
+                <nav>
+                    <ul class="nav__links">
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="practice.html">Practice</a></li>
+                        <li><div class="dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">
+                              Courses
+                            </a>
+                          
+                            <ul class="dropdown-menu" aria-labelledby="Courses">
+							    <li><a class="dropdown-item" href="DataStructure.html">Data Structures</a></li>
+                                <li><a class="dropdown-item" href="./cpluspluslanguage.html">C/C++ language</a></li>
+                                <li><a class="dropdown-item" href="#">Python language</a></li>
+                                <li><a class="dropdown-item" href="#">Java language</a></li>
+                            </ul>
+                          </div></li>
+                          <li><div class="dropdown">
+                            <a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Contest
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="Courses">
+                                    <li><a class="dropdown-item" href="#">Contest 1</a></li><br>
+                                    <li><a class="dropdown-item" href="#">Contest 2</a></li>
+                                    <li><a class="dropdown-item" href="#">Contest 3</a></li>
+                                    <li><a class="dropdown-item" href="#">Contest 4</a></li>
+                                </ul>
+                              </div></li>
+                        <li><a href="./about.html">About Us</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="#">Diamond</a></li>
+    
+                    </ul>
+                </nav>
+                <a class="cta" href="#"><button>Login/Register</button></a>
+		<!--
+                <a class="cta" href="#"><button>Register</button></a>
+                <a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+                --> 
+           </header>
+            <div id="mobile__menu" class="overlay">
+                <a class="close" onclick="closeNav()">&times;</a>
+                <div class="overlay__content">
+                    <a href="#">Home</a>
+                    <a href="#">Practice</a>
+                    <div class="dropdown">
+                    <a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">
+                          Courses
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="Courses">
+                            <li><a class="dropdown-item" href="#">C language</a></li>
+                            <li><a class="dropdown-item" href="#">C++ language</a></li>
+                            <li><a class="dropdown-item" href="#">Python language</a></li>
+                            <li><a class="dropdown-item" href="#">Java language</a></li>
+                        </ul>
+                      </div>
+                      <div class="dropdown">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">
+                              Contest
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="Courses">
+                                <li><a class="dropdown-item" href="#">Contest 1</a></li>
+                                <li><a class="dropdown-item" href="#">Contest 2</a></li>
+                                <li><a class="dropdown-item" href="#">Contest 3</a></li>
+                                <li><a class="dropdown-item" href="#">Contest 4</a></li>
+                            </ul>
+                          </div>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Diamond</a>
+                </div>
+            </div>
+            <script type="text/javascript" src="mobile.js"></script>
+			
+			
+			
+			<div id="signInModal" class="modal">
+            <form class="modal-content" action="/action_page.php">
+                <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+                <div class="container">
+                <h1>Welcome Back!</h1>
+                <hr>
+                <label for="Username" class="label">
+                    <b>Email</b>
+                </label>
+                <input type="email" placeholder="Enter Email" name="Username" required>
+
+                <label for="psw" class="label">
+                    <b>Password</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="clearfix" class="label">
+                    
+                    <button type="submit" class="signinbtn">Sign In</button>
+                </div>
+            </div>
+            <div id="signUpPrompt" class="signUpForm">Not a member?
+                <span id="" class="signUp" onclick="openSignUp()">Sign Up</span>
+            </div>
+        </form>
+    </div>
+	
+	
+	
+	<div id="signUpModal" class="modal">
+        <div class="modal-content-sigup">
+            <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+            <form class="modal-content-sigUp" action="/action_page.php">
+                <div class="container-signUp">
+                    <h1>Get Started</h1>
+                    <hr>
+                    <label for="Fullname" class="label">Full Name</label>
+                    <input type="text" placeholder="Enter Full Name" name="Fullname" required>
+                    <label for="Username" class="label">Email</label>
+                    <input type="email" placeholder="Enter Email" name="Username" required>
+                    <label for="psw" class="label">Password</label>
+                    <input  id="password" type="password" placeholder="Enter Password" name="psw" required>
+                    <label  for="pswrepeat" class="label">Confirm Password</label>
+                    <input id="confirmPassword" type="password" placeholder="Confirm Password" name="pswrepeat" required>
+                    <div class="clearfix">
+                            <button type="submit" class="signupbtn" onclick="formValidate()">Sign Up</button>
+                        <button type="button" class="cancelbtn">Clear</button> 
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+  
+	</div>
+	<br><br><br>
+<!--
+	<div class="contact-details">
+	     <div class="position-">
+		     <h2><center>Founder's Info</center></U></h2><br>
+		     <h3>Prachi Bhardwaj<h3>
+			 <br>
+			 <p><i class="fa fa-envelope" aria-hidden="true"></i>Email: ofc11.prachibhardwaj@gmail.com</p>
+			 <p><i class="fa fa-phone" aria-hidden="true"></i>Contact: 8937856216</p>
+			 <br>
+			 <br>
+			 <h3>Ravi chaudhary<h3>
+			 <br>
+			 <p><i class="fa fa-envelope" aria-hidden="true"></i>Email: rc111222@gmail.com</p>
+			 <p><i class="fa fa-phone" aria-hidden="true"></i>contact: 9521385658 </p>
+		 </div>
+	 </div>
+-->	 
+	<div class="contactform">
+	     <h3>Drop us a message</h3>
+		 <form>
+		     <input type="text" name="field-1" placeholder="your name"/>
+			 <input type="email" name="field-2" placeholder="your email-id"/>
+			 <textarea name="field-3" placeholder="type your message"></textarea>
+			 <input type ="submit" value="send"/>
+		 </form>
+	 </div>
+	 <br><br>
+	 <div class="contact-details">
+	     <hr class="rounded">
+		 <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp EMAIL: codercrust@co.in &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+		 <i class="fa fa-phone" aria-hidden="true"></i>&nbsp CONTACT: 0112-4040-3432</p>
+	 </div>
+		 
+</div>
+</body>
+</html>

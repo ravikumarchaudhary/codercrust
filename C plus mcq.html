@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>C plus mcqs</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+ background: black;
+}
+p{
+color: white;}
+
+#imp{
+ color: red;
+}
+</style>
+
+</head>
+    <body> 
+	<header>
+	<img class="logo" alt="logo" src="logo.jpeg">
+	<nav>
+	<ul class="nav__links">
+		<li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+		<li><div class="dropdown">
+		<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-clone" aria-hidden="true"></i> Courses</a>                          
+			<ul class="dropdown-menu" aria-labelledby="Courses">
+				<li><a class="dropdown-item" href="#">Data Structure</a></li><br>
+				<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+				<li><a class="dropdown-item" href="#">Python language</a></li>
+				<li><a class="dropdown-item" href="#">Java language</a></li>
+			</ul>
+		  </div></li>
+		<li><a href="practice question.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li>
+
+		  <li><div class="dropdown">
+			<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+				<ul class="dropdown-menu" aria-labelledby="Courses">
+					<li><a class="dropdown-item" href="#">Contest 1</a></li>
+					<li><a class="dropdown-item" href="#">Contest 2</a></li>
+					<li><a class="dropdown-item" href="#">Contest 3</a></li>
+					<li><a class="dropdown-item" href="#">Contest 4</a></li>
+				</ul>
+			  </div></li>
+		<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> About Us</a></li>
+		<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+		<li><a href="rowtable.html"><i class="fa fa-book-reader" aria-hidden="true"></i>Diamond</a></li>
+	</ul>
+	</nav>
+	<a class="cta" href="#"><button>Login/Register</button></a>
+	<!--
+	<a class="cta" href="#"><button>Register</button></a>
+	<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+	-->		
+   </header>
+	  
+	
+	<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+	</div>
+	<br>
+	<div class="wholefile"> 
+	<!--
+	<div class="dropdown">
+	  <button class="dropbtn">Dropdown</button>
+	  <div class="dropdown-content">
+	    <a href="#">Link 1</a>
+	    <a href="#">Link 2</a>
+	    <a href="#">Link 3</a>
+	  </div>
+	</div>	
+	
+	</div> -->
+	<br><br>
+		
+        <div class="dropdown">
+		<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Access specifiers Input/Output Questions</a>
+		<ul class="dropdown-menu" aria-labelledby="Courses">
+		<li><a class="dropdown-item" href="#">Input/Output Question 1</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 2</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 3</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 4</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 5</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 6</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 7</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 8</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 9</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 10</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 11</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 12</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 13</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 14</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 15</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 16</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 17</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 18</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 19</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 20</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 21</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 22</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 23</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 24</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 25</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 26</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 27</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 28</a></li>
+		</ul>
+	</div>
+	<br><br>
+	
+	<div class="dropdown">
+		<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Class and Objects Input/Output Questions</a>
+		<ul class="dropdown-menu" aria-labelledby="Courses">
+		<li><a class="dropdown-item" href="#">Input/Output Question 1</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 2</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 3</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 4</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 5</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 6</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 7</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 8</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 9</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 10</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 11</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 12</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 13</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 14</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 15</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 16</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 17</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 18</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 19</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 20</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 21</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 22</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 23</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 24</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 25</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 26</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 27</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 28</a></li>
+		</ul>
+	</div>
+	<br> <br>
+	
+	<div class="dropdown">
+		<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Dynamic memory Allocation Input/Output Questions</a>
+		<ul class="dropdown-menu" aria-labelledby="Courses">
+		<li><a class="dropdown-item" href="#">Input/Output Question 1</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 2</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 3</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 4</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 5</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 6</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 7</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 8</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 9</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 10</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 11</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 12</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 13</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 14</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 15</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 16</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 17</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 18</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 19</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 20</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 21</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 22</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 23</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 24</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 25</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 26</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 27</a></li>
+		<li><a class="dropdown-item" href="#">Input/Output Question 28</a></li>
+		</ul>
+	</div>
+		
+        </div><!-- this is wholefile div class end -->	
+  <script type="text/javascript" src="mobile.js"></script>   
+    </body>	
+</html>

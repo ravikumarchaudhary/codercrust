@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>deletion operation</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			background-color: black;
+		}
+
+		#hlo {
+			margin-left: 250px;
+			color: green;
+		}
+
+		#idhai {
+			margin-top: 0px;
+			color: green;
+		}
+
+		#class1 {
+			outline: solid 1px;
+			;
+			outline-color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<img class="logo" alt="logo" src="logo.jpeg">
+		<nav>
+			<ul class="nav__links">
+				<li><a href="FrontPage.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+				<li>
+					<div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+							aria-expanded="false"><i class="fa fa-clone" aria-hidden="true"></i> Courses</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="DataStructure.html" id="rcpb1">Data Structure</a></li>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="TodoList/index.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li>
+
+				<li>
+					<div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+							aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> About Us</a></li>
+				<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+				<li><a href="rowtable.html"><i class="fa fa-book-reader" aria-hidden="true"></i>Diamond</a></li>
+			</ul>
+		</nav>
+		<a class="cta" href="#"><button>Login</button></a>
+		<a class="cta" href="#"><button>Register</button></a>
+		<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+				fill="white" width="40px" height="40px">
+				<path d="M0 0h24v24H0V0z" fill="none" />
+				<path
+					d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z" />
+			</svg></a>
+	</header>
+	<div id="mobile__menu" class="overlay">
+		<a class="close" onclick="closeNav()">&times;</a>
+		<div class="overlay__content">
+			<a href="#">Home</a>
+			<a href="#">Practice</a>
+			<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+					aria-expanded="false">Courses</a>
+				<ul class="dropdown-menu" aria-labelledby="Courses">
+					<li><a class="dropdown-item" href="#">C/C++ language</a></li>
+					<li><a class="dropdown-item" href="#">Python language</a></li>
+					<li><a class="dropdown-item" href="#">Java language</a></li>
+				</ul>
+			</div>
+			<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+					aria-expanded="false">Contest</a>
+				<ul class="dropdown-menu" aria-labelledby="Courses">
+					<li><a class="dropdown-item" href="#">Contest 1</a></li>
+					<li><a class="dropdown-item" href="#">Contest 2</a></li>
+					<li><a class="dropdown-item" href="#">Contest 3</a></li>
+					<li><a class="dropdown-item" href="#">Contest 4</a></li>
+				</ul>
+			</div>
+			<a href="#">About Us</a>
+			<a href="#">Contact</a>
+			<a href="#">Diamond</a>
+		</div>
+	</div>
+
+	<br>
+	<!-- content starts from here -->
+	<div class="wholefile">
+		<div> <a id="prev1" href="#">
+				<< Prev</a>
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+					<a id="next1" href="#">Next >></a></div>
+		<br> <br> <br>
+		<h3 class="rcpb"><i><b>Linked list Deletion operation - </b></i></h3>
+		<p id="idhai" class="def1">Last updated: 21jun2021</p>
+
+		<br><br>
+		<p class="def1"><b> There are three different position to delete the node from linked list - </b><br>
+			&nbsp &nbsp 1. Delete a node at beginning <br>
+			&nbsp &nbsp 2. Delete a node at end <br>
+			&nbsp &nbsp 3. Delete a node from any particular position <br> </p>
+
+		<br>
+		<p class="def1">1. Delete a node from beginning -</p>
+		<img class="linked_list_img" src="delete from front.jpeg">
+		<div class="grid-container">
+			<ul>
+				<li>
+					<div><a class="dropdown-item" href="https://ideone.com/FI39KC">Pgm to delete element from the
+							beginning</a></div>
+				</li>
+			</ul>
+		</div>
+
+		<br>
+		<p class="def1">2. Delete a node from end - </p>
+		<img class="linked_list_img" src="deletion from end.jpeg">
+		<div class="grid-container">
+			<ul>
+				<li>
+					<div><a class="dropdown-item" href="https://ideone.com/R1ZvSr">Pgm to delete element from the
+							end</a></div>
+				</li>
+			</ul>
+		</div>
+
+
+		<br>
+		<p class="def1">3. Delete a node from any particular position - </p>
+		<img class="linked_list_img" src="deletion from parti pos.jpeg">
+		<div class="grid-container">
+			<ul>
+				<li>
+					<div><a class="dropdown-item" href="https://ideone.com/HFPMTq">Pgm to delete element from any
+							particular position</a></div>
+				</li>
+			</ul>
+		</div>
+
+
+
+	</div>
+
+	<footer>
+		<div class="main-footer">
+			<div class="left box">
+				<h3>About us</h3>
+				<div class="content">
+					<p>CoderCrust is developed in order to help students
+						to learn in the most student friendly enviornment with
+						the vision to enhance their knowledge with daily practice
+						and latest updated course content.</p>
+				</div>
+				<div class="social-tab">
+					<a href='#'><span class="fa fa-facebook-official"></span></a>
+					<a href='#'><span class="fa fa-instagram"></span></a>
+					<a href='#'><span class="fa fa-twitter-square"></span></a>
+					<a href='#'><span class="fa fa-linkedin"></span></a>
+				</div>
+			</div>
+
+
+			<div class="center box">
+				<h3>important links</h3>
+				<div class="content">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="#">contribute</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="right box">
+				<h3>Suggestion box</h3>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<input type="email" placeholder="Email" required>
+						</div>
+						<div class="mssg">
+							<textarea rows="2" cols="25" placeholder="Enter Your Suggestion" required></textarea>
+						</div>
+						<div class="send">
+							<button type="submit" class="btn-suggestion">send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+	<script type="text/javascript" src="mobile.js"></script>
+	<script src="TodoList/js/main.js"></script>
+
+</body>
+
+</html>

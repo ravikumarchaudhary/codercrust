@@ -1,0 +1,710 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #24252a;
+}
+footer {
+  width: 100%;
+  background: #24252a;
+  color: white;
+}
+.main-footer {
+  display: flex;
+  padding: 10px;
+}
+.main-footer .box {
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h3 {
+  font-size: 1.125em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.box .content {
+  margin: 10px 0 0 0;
+}
+.left .content .social {
+  margin: 20px 0 0 0;
+}
+.left .content .social a {
+  padding: 0 2px;
+}
+.left .content .social a span {
+  height: 40px;
+  width: 40px;
+  background: #1a1a1a;
+  line-height: 40px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+.left .content .social a span:hover {
+  background: #f12020;
+}
+
+body {
+  background-color: white;
+}
+li,
+a,
+button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  /*padding: 15px 8%;*/
+
+  padding: 25px 70px 8px 40px;
+  /*padding-left: -10px;
+  padding-right: 5px;*/
+}
+
+.dropdown a {
+  color: #fff;
+}
+.dropdown-menu {
+  background-color: rgba(0, 136, 169, 1);
+}
+#courses {
+  background-color: #24252a;
+}
+
+.logo {
+  cursor: pointer;
+  background-color: azure;
+  height: 50px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.logo1 {
+  cursor: pointer;
+  background-color: azure;
+  height: 500px;
+  width: 1200px;
+  /*padding-left: 310px;*/
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.nav__links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: #0088a9;
+}
+.menu {
+  display: none;
+}
+.sub-menu-2 a {
+  color: black;
+}
+
+.sub-menu-2 a:hover {
+  color: blue;
+}
+
+#hello {
+  width: 100%;
+  height: 45rem;
+  /*overflow:scroll;*/
+}
+
+.sub-menu-2 ul li a {
+  padding: 20px;
+  color: black;
+  font-family: sans-serif;
+  padding: 0;
+}
+
+.sub-menu-2 ul li a:hover,
+.sub-menu-2 ul li a:focus {
+  text-decoration: none;
+  /*color: #7c7c7c;*/
+  text-decoration-line: underline;
+  color: blue;
+  padding: 0;
+
+  /*cursor: alias;
+  cursor: all-scroll;
+  cursor: auto;
+  cursor: cell;
+  cursor: context-menu;
+  cursor: col-resize;
+  cursor: copy;
+  cursor: crosshair;
+  cursor: default;
+  cursor: e-resize;
+  cursor: ew-resize;
+  cursor: grab;
+  cursor: grabbing;
+  cursor: help;
+  cursor: move;
+  cursor: n-resize;
+  cursor: ne-resize;
+  cursor: nesw-resize;
+  cursor: ns-resize;
+  cursor: nw-resize;
+  cursor: nwse-resize;
+  cursor: no-drop;
+  cursor: none;
+  cursor: not-allowed;
+  cursor: pointer;
+  cursor: progress;
+  cursor: row-resize;
+  cursor: s-resize;
+  cursor: se-resize;
+  cursor: sw-resize;
+  cursor: text;
+  cursor: url(myBall.cur),auto;
+  cursor: w-resize;
+  cursor: wait;
+  cursor: zoom-in;
+  cursor: zoom-out;*/
+}
+
+.blogText {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.blogText-container {
+  width: 350px;
+  border: 1px solid #a0f4d1;
+  padding: 10px;
+  padding-top: 15px;
+  margin: 20px;
+  height: min-content;
+  background-color: #a0f4d1;
+  border-radius: 10px;
+}
+
+.blogText-container_dsa {
+  width: 350px;
+  border: 1px solid #a0f4d1;
+  padding: 10px;
+  padding-top: 15px;
+  margin: 20px;
+  height: min-content;
+  background-color: #a0f4d1;
+  border-radius: 10px;
+}
+
+.sub-menu-2 > ul {
+  background-color: white;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-bottom: 0;
+  list-style: none;
+}
+.blogText1 {
+  padding: 720px;
+}
+
+.blogAuthor {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+button {
+  margin-left: 20px;
+  padding: 15px 20px;
+  background-color: rgba(0, 136, 169, 1);
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(0, 136, 169, 0);
+}
+
+.panel-heading {
+  text-align: center;
+  background: yellow;
+  font-family: consolas;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.hloo p {
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav__links,
+  .cta {
+    display: none;
+  }
+  .menu {
+    display: inherit;
+  }
+}
+/*Mobile view*/
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #24252a;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in;
+}
+
+.overlay__content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay a {
+  padding: 15px;
+  font-size: 25px;
+  display: block;
+  transition: all 0.3s ease-in;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #0088a9;
+}
+
+.overlay .close {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.blogTite {
+  margin: 10px 10px 10px 10px;
+  font-size: 150%;
+  font-family: "Abel", sans-serif;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-align: center;
+}
+.blogText {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  text-align: justify;
+  padding: 0px 10px 10px 10px;
+}
+.blogAuthor {
+  padding: 0px 0px 0px 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.blogContent {
+  height: 100%;
+  padding: 10px 60px 30px 60px;
+}
+
+/* This css is for front page content after headline */
+
+wrapper1 {
+  /*width: 860px;*/
+  margin: 0 auto;
+}
+.wrapper1 ul {
+  list-style: none;
+  margin-top: 2%;
+}
+.wrapper1 ul li a {
+  margin: 10px 10px;
+  background: rgb(181, 207, 207);
+  width: 220px;
+  border: 1px solid #fff;
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  position: relative;
+  font-family: big john;
+}
+.wrapper1 ul li a {
+  color: rgb(47, 59, 59);
+  font-weight: bold;
+}
+.wrapper1 {
+  padding: 100px 50px 50px 250px;
+}
+#rcpb1 {
+  text-align: center;
+}
+
+.wrapper1 ul li a:hover {
+  background: rgb(107, 132, 132);
+  color: blue;
+  text-decoration-line: underline;
+}
+.wrapper1 ul ul a {
+  display: none;
+}
+.wrapper1 ul li a:hover > ul {
+  display: block;
+}
+/*--------------------------*/
+
+/*Data Structure page css*/
+
+.head {
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 20px;
+  background: black;
+  text-align: center;
+  font-family: consolas;
+  font-weight: bold;
+  font-size: 25px;
+  color: blue;
+  text-decoration-line: underline;
+}
+.hloo {
+  text-align: center;
+  background-color: green;
+  color: white;
+}
+
+.wholefile {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.class_h6 {
+  color: white;
+  text-align: center;
+}
+
+/* data structure grids css*/
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 0px;
+  /*background-color: #2196F3;*/
+  padding: 0px;
+  margin-top: 20px;
+}
+
+.grid-container div a {
+  color: green;
+  font-weight: bold;
+}
+
+.grid-container div a:hover {
+  text-decoration: underline;
+  background: white;
+  color: black;
+}
+
+.grid-container > div {
+  background-color: black;
+  border: none;
+  text-align: left;
+  font-size: 30px;
+}
+
+/*Data structure grids css end*/
+
+/*Array data structure page html file*/
+
+.rcpb {
+  color: white;
+}
+
+.def1 {
+  color: white;
+  font-size: 14px;
+}
+.img {
+  width: 100%;
+}
+
+.grid-containerarray div a {
+  color: green;
+  font-weight: bold;
+}
+
+.grid-containerarray div a:hover {
+  text-decoration: underline;
+  background: white;
+  color: black;
+}
+
+.grid-containerarray > div {
+  background-color: white;
+  border: none;
+  text-align: left;
+  font-size: 30px;
+}
+
+.aryarray {
+  margin-left: 0px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/*Array data Structure page html file end*/
+
+#rcpb1 {
+  border-radius: 10px;
+}
+
+.ary {
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.def {
+  color: white;
+  margin-left: 250px;
+  margin-right: 250px;
+  margin-top: 20px;
+}
+.linked_list_img {
+  width: 950px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .close {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .blogContent {
+    padding: 10px;
+  }
+  .blogTite {
+    font-size: 18px;
+  }
+  .blogAuthor {
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 0;
+    text-align: center;
+  }
+  .blogText {
+    padding: 0;
+    width: 100%;
+  }
+  .blogText > h6 {
+    margin-bottom: 10px;
+  }
+  .blogText > li {
+    margin-left: 25px;
+  }
+  .sub-menu-2 > ul {
+    padding: 10px;
+  }
+  .sub-menu-2 > ul > li > a {
+    font-size: 14px;
+    padding: 0;
+  }
+}
+
+.wholefile {
+  margin-left: 250px;
+  margin-top: 20px;
+  margin-right: 250px;
+  padding: 10px;
+}
+
+/*Css of prev and next button*/
+
+#prev1,
+#next1 {
+  color: #0088a9;
+  font-weight: bold;
+  border: 1px solid #0088a9;
+  border-radius: 5px;
+  padding: 2px;
+  font-size: 14px;
+  transition: all ease-in-out 200ms;
+}
+
+#prev1:hover,
+#next1:hover {
+  color: black;
+  background-color: #0088a9;
+}
+/*Css of prev and next button end*/
+
+#idhai {
+  margin-top: 0px;
+  color: green;
+}
+
+/* CSS property for cplus plus dropdown*/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+/*Css property for cplus plus end*/
+
+/***********header**********/
+header button {
+  border-radius: 10px;
+  margin-left: 0;
+  padding: 10px 20px;
+}
+header button:hover {
+  background-color: rgb(1, 117, 146);
+}
+
+/*****toggle page next prev********/
+.toggle-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+/***********footer**********/
+.email > input {
+  width: 250px;
+}
+.mssg {
+  margin-top: 10px;
+}
+.mssg > textarea {
+  width: 250px;
+}
+.btn-suggestion {
+  border-radius: 5px;
+  margin-left: 0;
+  margin-top: 10px;
+  width: 250px;
+  padding: 5px 0px;
+  background-color: #24252a;
+  border: 1px solid #0088a9;
+  color: #0088a9;
+  font-weight: 700;
+}
+.btn-suggestion:hover {
+  background-color: #0088a9;
+  color: #24252a;
+}
+.social-tab > a {
+  margin-right: 10px;
+}
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .main-footer {
+    display: block;
+  }
+  .wholefile {
+    margin: 0;
+    padding: 5px;
+  }
+  .head {
+    margin: 0;
+  }
+  .grid-container {
+    grid-template-columns: 150px 150px;
+  }
+  .wrapper1 {
+    padding: 0;
+  }
+  .logo {
+    width: 90px;
+    height: 30px;
+    margin-left: -20px;
+    margin-top: -10px;
+  }
+  .hamburger {
+    display: inline;
+    color: white;
+    margin-top: -10px;
+    color: #0088a9;
+    position: absolute;
+    right: 25px;
+    cursor: pointer;
+  }
+  .hamburger:hover,
+  .hamburger:focus {
+    color: #016983;
+  }
+}

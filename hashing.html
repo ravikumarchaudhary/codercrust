@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Hashing</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			background: black;
+		}
+
+		#idhai {
+			color: green;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<img class="logo" alt="logo" src="logo.jpeg">
+		<nav>
+			<ul class="nav__links">
+				<li><a href="Home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+				<li>
+					<div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+							aria-expanded="false"><i class="fa fa-clone" aria-hidden="true"></i> Courses</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="DataStructure.html">Data Structures</a></li>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="practice.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li>
+
+				<li>
+					<div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+							aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="About.html"><i class="fa fa-user" aria-hidden="true"></i> About Us</a></li>
+				<li><a href="contact.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+				<li><a href="rowtable.html"><i class="fa fa-book-reader" aria-hidden="true"></i>Diamond</a></li>
+			</ul>
+		</nav>
+		<a><button class="cta" onclick="document.getElementById('login-form').style.display='block'"
+				style="width:auto;">Login/register</button></a>
+		<!--<a class="cta" href="#"><button>Login</button></a>
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>-->
+		<div class="hamburger" onclick="openNav()" id="hamburger-menu">
+			<i class="fa fa-bars fa-2x"></i>
+		</div>
+	</header>
+
+
+
+
+	<div id="mobile__menu" class="overlay">
+		<a class="close" onclick="closeNav()">&times;</a>
+		<div class="overlay__content">
+			<a href="#">Home</a>
+			<a href="#">Practice</a>
+			<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+					aria-expanded="false">Courses</a>
+				<ul class="dropdown-menu" aria-labelledby="Courses">
+					<li><a class="dropdown-item" href="#">C/C++ language</a></li>
+					<li><a class="dropdown-item" href="#">Python language</a></li>
+					<li><a class="dropdown-item" href="#">Java language</a></li>
+				</ul>
+			</div>
+			<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+					aria-expanded="false">Contest</a>
+				<ul class="dropdown-menu" aria-labelledby="Courses">
+					<li><a class="dropdown-item" href="#">Contest 1</a></li>
+					<li><a class="dropdown-item" href="#">Contest 2</a></li>
+					<li><a class="dropdown-item" href="#">Contest 3</a></li>
+					<li><a class="dropdown-item" href="#">Contest 4</a></li>
+				</ul>
+			</div>
+			<a href="#">About Us</a>
+			<a href="#">Contact</a>
+			<a href="#">Diamond</a>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="mobile.js"></script>
+
+	<br>
+	<div class="wholefile">
+		<div class="toggle-page"> <a id="prev1" href="heap.html">
+				<< Prev</a>
+					<a id="next1" href="graph.html">Next >></a></div>
+
+		<br><br><br>
+
+		<h3 class="rcpb"><b><i>Hashing Data Structure</i></b></h3>
+		<p id="idhai" class="def1">Last Updated: 29th june 2021</p><br>
+		<p class="def1"><b><i>Hashing </i></b> is a method of generating unique key or index value for the data elements
+			with the help of hash function which is stored in hash table to use N number of times when ever required.
+		</p><br>
+		<p class="def1"><b><u>Hash Function : </u></b><br><br>
+			Hash function generates the unique value using different methods and techniques and then uses for every data
+			element.
+			But what makes a hash function good .<br><br>
+			Following are the charachteristics of a good hash function:<br>
+			1- Uniform distribution of key to data.<br>
+			2- easily computable<br>
+			3- Must use all the input data.<br><br>
+			<b>Different Hash Functions</b><br>
+			<u>Division Method</u><br>
+			This is the most simple method of hashing.
+			Any integer, for example, x is divided by a number M and the remainder obtained is used as the hash.
+			Function is represented as:<br>
+			h(k) = k mod M<br><br>
+
+			<u>Multiplication Method</u><br>
+			In this method Key is multiplied by a constant between 0 and 1 then the hasg table is multiplied by
+			the fractional part of the result of which can be represented as:<br>
+			h(k) = fractional_part[ m (kA mod 1) ]<br><br>
+
+
+			<u>Mid-Square Method</u><br>
+			In this method the key is squared and the middle r digits are extracted which is the resulting hash
+			value.<br><br><br>
+		</p>
+		<p class="def1"><b><u>Hash Table : </u></b><br><br>
+			A hash table is a data structure that is used to store keys/value pairs.
+			It uses a hash function to compute an index into an array in which an
+			element will be inserted or searched. By using a good hash function,
+			hashing can work well. Under reasonable assumptions,
+			the average time required to search for an element in a hash table is O(1).
+		</p>
+		<img class="arrayimg" src="hashtable.jpg">
+		<br><br>
+		<p class="def1"><b><u>Collision</u></b><br><br>
+			collision is a situation that occurs while using hashing .
+			The situation where a newly inserted key maps to an already
+			occupied slot in hash table is called collision and must be
+			handled using some collision handling technique.
+			<br><br>
+			Some of the techniques to solve collision are:<br>
+			1- Linear probing(closed hashing)<br>
+			2- Seperate chaining (open hashing)<br>
+			3- Quadratic probing<br><br>
+			<b>Linear probing</b><br>
+			In open addressing, instead of in linked lists, all entry records are stored in the array itself.
+			When a new entry has to be inserted, the hash index of the hashed value is computed and then the
+			array is examined (starting with the hashed index). If the slot at the hashed index is unoccupied,
+			then the entry record is inserted in slot at the hashed index else it proceeds in some probe sequence
+			until it finds an unoccupied slot.<br><br>
+			<img class="arrayimg" src="lp.jpeg"><br><br>
+			<b>Seperate chaining</b><br>
+			Separate chaining is one of the most commonly used collision resolution techniques.
+			It is usually implemented using linked lists. In separate chaining, each element of
+			the hash table is a linked list. To store an element in the hash table you must insert
+			it into a specific linked list. If there is any collision (i.e. two different elements
+			have same hash value) then store both the elements in the same linked list.<br><br>
+			<img class="arrayimg" src="sc.jpeg"><br><br>
+			<b>Quadratic Probing</b><br>
+			uadratic probing is similar to linear probing and the only difference is the interval
+			between successive probes or entry slots. Here, when the slot at a hashed index for an
+			entry record is already occupied, you must start traversing until you find an unoccupied slot.
+			The interval between slots is computed by adding the successive value of an arbitrary polynomial
+			in the original hashed index.<br><br>
+			<img class="arrayimg" src="qp.jpeg"><br><br>
+		</p>
+
+
+		<br>
+	</div>
+	</div>
+	<footer>
+		<div class="main-footer">
+			<div class="left box">
+				<h3>About us</h3>
+				<div class="content">
+					<p>CoderCrust is developed in order to help students
+						to learn in the most student friendly enviornment with
+						the vision to enhance their knowledge with daily practice
+						and latest updated course content.</p>
+				</div>
+				<div class="social-tab">
+					<a href='#'><span class="fa fa-facebook-official"></span></a>
+					<a href='#'><span class="fa fa-instagram"></span></a>
+					<a href='#'><span class="fa fa-twitter-square"></span></a>
+					<a href='#'><span class="fa fa-linkedin"></span></a>
+				</div>
+			</div>
+
+
+			<div class="center box">
+				<h3>important links</h3>
+				<div class="content">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="#">contribute</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="right box">
+				<h3>Suggestion box</h3>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<input type="email" placeholder="Email" required>
+						</div>
+						<div class="mssg">
+							<textarea rows="2" cols="25" placeholder="Enter Your Suggestion" required></textarea>
+						</div>
+						<div class="send">
+							<button type="submit" class="btn-suggestion">send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+	<script src="TodoList/js/main.js"></script>
+</body>
+
+</html>

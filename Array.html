@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Array</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			background-color: black;
+		}
+
+		#idhai {
+			margin-top: 0px;
+			color: green;
+		}
+
+		#class1 {
+			outline: solid 1px;
+			;
+			outline-color: white;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<img class="logo" alt="logo" src="logo.jpeg">
+		<nav>
+			<ul class="nav__links">
+				<li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+				<li>
+					<div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+							aria-expanded="false"><i class="fa fa-clone" aria-hidden="true"></i> Courses</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="DataStructure.html" id="rcpb1">Data Structure</a></li>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="practice question.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li>
+
+				<li>
+					<div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+							aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> About Us</a></li>
+				<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+				<li><a href="rowtable.html"><i class="fa fa-book-reader" aria-hidden="true"></i>Diamond</a></li>
+			</ul>
+		</nav>
+		<a class="cta" href="#"><button>Login/Register</button></a>
+		<!-- 
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+                       -->
+		<div class="hamburger" onclick="openNav()" id="hamburger-menu">
+			<i class="fa fa-bars fa-2x"></i>
+		</div>
+		<div class="hamburger" onclick="openNav()" id="hamburger-menu">
+			<i class="fa fa-bars fa-2x"></i>
+		</div>
+	</header>
+	<div id="mobile__menu" class="overlay">
+		<a class="close" onclick="closeNav()">&times;</a>
+		<div class="overlay__content">
+			<a href="#">Home</a>
+			<a href="practice question.html">Practice</a>
+			<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+					aria-expanded="false">Courses</a>
+				<ul class="dropdown-menu" aria-labelledby="Courses">
+					<li><a class="dropdown-item" href="#">C/C++ language</a></li>
+					<li><a class="dropdown-item" href="#">Python language</a></li>
+					<li><a class="dropdown-item" href="#">Java language</a></li>
+				</ul>
+			</div>
+			<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+					aria-expanded="false">Contest</a>
+				<ul class="dropdown-menu" aria-labelledby="Courses">
+					<li><a class="dropdown-item" href="#">Contest 1</a></li>
+					<li><a class="dropdown-item" href="#">Contest 2</a></li>
+					<li><a class="dropdown-item" href="#">Contest 3</a></li>
+					<li><a class="dropdown-item" href="#">Contest 4</a></li>
+				</ul>
+			</div>
+			<a href="#">About Us</a>
+			<a href="#">Contact</a>
+			<a href="#">Diamond</a>
+		</div>
+	</div>
+
+	<br>
+	<div class="wholefile">
+		<div class="toggle-page">
+			<a id="prev1" href="#">
+				<< Prev</a>
+					<a id="next1" href="Introduction to linked list.html">Next >></a>
+		</div>
+
+		<br> <br> <br>
+		<h3 class="rcpb"><b><i>Array Data Structure - </i></b></h3>
+		<p id="idhai" class="def1">Last Updated: 13june 2021</p><br>
+		<p class="def1">An <b><i>Array</i></b> is a collection of variable of same data types.
+			All the elements of array are stored in the contiguous memory locations. The size of the array must
+			be a constant integeral value. Individual elements in an array can be accessed by the name of the
+			array and an integer enclosed in square bracket called subscript/index variable like arr[4].</p>
+
+		<br>
+		<img class="img" src="Array Image.jpeg">
+
+		<br><br><br>
+
+		<p class="def1"> <b><i>Element − </i></b>Each item stored in an array is called an element.<br>
+			<b><i>Index − </i></b> Each location of an element in an array has a numerical index, which is used to
+			identify the element.
+		</p>
+		<img class="img" src="Array Synax.jpeg">
+		<br><br>
+		<h4 class="aryarray"><i>Syntax to declare an array-</i></h4>
+		<script src="https://ideone.com/e.js/jQweUJ" type="text/javascript"></script>
+		<br><br>
+
+
+
+		<h4 class="aryarray"><i>Basic Operations </i> </h4>
+		<p class="def1">
+			<i>Following are the basic operations supported by an array.</i><br>
+			<b><i>&nbsp &nbsp 1. Traverse − </i></b> print all the array elements one by one.<br>
+			<b><i>&nbsp &nbsp 2. Insertion − </i></b> Adds an element at the given index. <br>
+			<b><i>&nbsp &nbsp 3. Deletion − </i></b> Deletes an element at the given index. <br>
+			<b><i>&nbsp &nbsp 4. Search − </i></b> Searches an element using the given index or by the value. <br>
+			<b><i>&nbsp &nbsp 5. Update − </i></b> Updates an element at the given index. <br>
+		</p>
+
+		<h4 class="aryarray"><i>1. Traverse operation - </i></h4>
+		<p class="def1">&nbsp &nbsp This operation is to traverse through the elements of an array.</p>
+		<script src="https://ideone.com/e.js/6rXO5i" type="text/javascript"></script>
+		<br>
+		<h4 class="aryarray"><i>Output - </i></h4>
+
+		<div id="class1">
+			<p class="def1">
+				&nbsp Array elements are : <br>
+				&nbsp &nbsp 1 23 4 74 52
+			</p>
+		</div>
+		<br>
+		<br>
+
+		<h4 class="aryarray"><i>2. Insertion operation - </i></h4>
+		<p class="def1">Insert operation is used to insert one or more data elements into an array.Based on the
+			requirement,
+			a new element can be added at the beginning, end, or any given index of array.
+			<br>
+			<br>Insert Element in an Array-
+
+			<br> &nbsp a. Insert element at the beginning of an array<br>
+			<script src="https://ideone.com/e.js/rZ012R" type="text/javascript"></script>
+
+			<br> &nbsp b. Insert element at the end of an array<br>
+			<script src="https://ideone.com/e.js/CcNFHq" type="text/javascript"></script>
+
+			<br> &nbsp c. Insert element at any particular position of an array
+			<script src="https://ideone.com/e.js/Jm0Z3i" type="text/javascript"></script>
+		</p>
+		<br>
+
+		<!-- deleteion in array part start -->
+		<h4 class="aryarray"><i>2. Deletion operation - </i></h4>
+		<p class="def1">Deletion operation is used to delete data elements into an array.Based on the requirement,
+			deletion can be at the beginning, end, or any given index of array.
+			<br>
+			<br>Delete Element in an Array-
+
+			<br> &nbsp a. Delete element from any position of an array<br>
+			<script src="https://ideone.com/e.js/Axe2ck" type="text/javascript"></script>
+		</p>
+
+
+
+
+		<h3 class="aryarray"><i>Some programing concepts related to Array-</i></h3>
+		<div class="grid-containerarray">
+			<ul>
+				<li>
+					<div><a class="dropdown-item" href="Introduction to linked list.html">WAP to find the sum of all the
+							array elements</a></div>
+				</li>
+				<li>
+					<div><a class="dropdown-item" href="#">WAP to find the max element from the array</a></div>
+				</li>
+				<li>
+					<div><a class="dropdown-item" href="#">WAP to find the min element from the array</a></div>
+				</li>
+				<li>
+					<div><a class="dropdown-item" href="#">WAP to update all the elements of array by dividing the
+							element with 10</a></div>
+				</li>
+				<li>
+					<div><a class="dropdown-item" href="#">WAP to insert the element in the array</a></div>
+				</li>
+				<li>
+					<div><a class="dropdown-item" href="#">WAP to delete an element from the array</a></div>
+				</li>
+			</ul>
+		</div>
+
+	</div> <!-- this div is of wholeclass -->
+	<br><br>
+	<footer>
+		<div class="main-footer">
+			<div class="left box">
+				<h3>About us</h3>
+				<div class="content">
+					<p>CoderCrust is developed in order to help students
+						to learn in the most student friendly enviornment with
+						the vision to enhance their knowledge with daily practice
+						and latest updated course content.</p>
+				</div>
+				<div class="social-tab">
+					<a href='#'><span class="fa fa-facebook-official"></span></a>
+					<a href='#'><span class="fa fa-instagram"></span></a>
+					<a href='#'><span class="fa fa-twitter-square"></span></a>
+					<a href='#'><span class="fa fa-linkedin"></span></a>
+				</div>
+			</div>
+
+
+			<div class="center box">
+				<h3>important links</h3>
+				<div class="content">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="#">contribute</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="right box">
+				<h3>Suggestion box</h3>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<input type="email" placeholder="Email" required>
+						</div>
+						<div class="mssg">
+							<textarea rows="2" cols="25" placeholder="Enter Your Suggestion" required></textarea>
+						</div>
+						<div class="send">
+							<button type="submit" class="btn-suggestion">send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+
+	<script type="text/javascript" src="mobile.js"></script>
+	<script src="TodoList/js/main.js"></script>
+
+</body>
+
+</html>

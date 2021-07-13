@@ -1,0 +1,38 @@
+
+*{
+	margin: 100px 50px;
+	padding: 0;
+}
+
+wrapper{
+	width: 860px;
+	margin: 0 auto;
+}
+.wrapper ul{
+	list-style: none;
+	margin-top: 2%;
+}
+.wrapper ul li a{
+	margin: 10px 10px;
+	background: #262626;
+	width: 220px;
+	border: 1px solid #fff;
+	height: 50px;
+	line-height: 50px;
+	text-align: left;
+	float: left;
+	color: #fff;
+	font-size: 14px;
+	/*position: relative;*/
+	font-family: big john;
+}
+.wrapper ul li a:hover{
+	background: crimson;
+}
+.wrapper ul ul a{
+	display: none;
+}
+.wrapper ul li a:hover > ul{
+	display: block;
+}
+

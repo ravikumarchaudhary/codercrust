@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <title>NewCPlusLanguage</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+<style>
+body{
+	background-color: black;
+	}
+#cplusid{
+ position: center;
+}
+#cplusid1{
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  font-family: consolas;
+}
+</style>
+</head>
+    <body> 
+	<div>
+		<header>
+			<img class="logo" alt="logo" src="logo.jpeg">
+			<nav>
+				<ul class="nav__links">
+					<li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+					<li><div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-clone" aria-hidden="true"></i> Courses</a>                          
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+ 							<li><a class="dropdown-item" href="DataStructure.html" id="rcpb1">Data Structure</a></li>
+ 							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					  </div></li>
+					<li><a href="#"><i class="fa fa-book" aria-hidden="true"></i>Practice</a></li>
+					
+					  <li><div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+							<ul class="dropdown-menu" aria-labelledby="Courses">
+								<li><a class="dropdown-item" href="#">Contest 1</a></li><br>
+								<li><a class="dropdown-item" href="#">Contest 2</a></li>
+								<li><a class="dropdown-item" href="#">Contest 3</a></li>
+								<li><a class="dropdown-item" href="#">Contest 4</a></li>
+							</ul>
+						  </div></li>
+					<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i>About Us</a></li>
+					<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i>Contact</a></li>
+					<li><a href="rowtable.html"><i class="fa fa-book-reader" aria-hidden="true"></i>Diamond</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#"><button>Login/Register</button></a>
+			<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+                        -->		
+</header>
+		<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+		</div>
+</div>	
+
+               <br>
+	       <div id="cplusid">
+		<h id="cplusid1"> C++ Content</h>
+		   </div>
+		<div class="blogText"> 
+                        <br> <br> <br> <br>
+			<div class="blogText-container">
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>Basic</h6>		
+			<!-- <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i> <b>Basic<b></a> -->
+			
+			 <div class="sub-menu-2">
+				 <ul>
+ 				 <li> <a href="#">1. Introduction to C++ programming Language</a> </li>
+				 <li> <a href="#">2. Setting up C++ Development Environment</a> </li>
+				 <li> <a href="#">3. C++ Programming Basics</a> </li>
+				 <li> <a href="#">4. C++ Data Types</a> </li>
+				 <li> <a href="#">5. Variables in C++</a> </li>
+				 <li> <a href="#">6. Loops in C and C++</a> </li>
+				 <li> <a href="#">7. Decision Making in C / C++ (if,if...else, Nested if, if-else-if)</a> </li>
+				</ul>
+			  </div>
+			</div>
+				 
+			<div class="blogText-container">
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>Basic Input/Output</h6>			
+			<!-- <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i><b>Basic Input/Output<b></a> -->
+			
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. I/O Redirection in C++</a> </li>
+				 <li> <a href="#">2. Basic Input/Output in C++</a> </li>
+				 <li> <a href="#">3. Clearing the Input Buffer in C/C++</a> </li>
+				</ul>
+			  </div>
+			</div>
+				 
+			<div class="blogText-container">
+			
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>Operators</h6>
+			
+			<!-- <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i><b>Operators<b></a> -->
+		
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. Operators in C/C++</a> </li>
+				 <li> <a href="#">2. Unary operators in C/C++</a> </li>
+				 <li> <a href="#">3. Pre-incrmement (or pre-decrement) in C++</a> </li>
+				 <li> <a href="#">4. New and delete operators in C++ for dynamic memory</a> </li>
+ 				</ul>
+			  </div>
+			</div>
+				 
+			<div class="blogText-container">
+			 
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>Arrays</h6>
+			
+			<!-- <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i><b>Arrays<b></a> -->
+			
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. Arrays in C/C++</a> </li>
+				 <li> <a href="#">2. Multidimensional Array in C/C++</a> </li>
+				 <li> <a href="#">3. How to print size of Array parameter in C++</a> </li>
+				</ul>
+			  </div>
+			</div>
+			 
+		   
+			
+			<div class="blogText-container">
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>String</h6>			 
+			<!-- <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i><b>String<b></a> -->
+			
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. std::string class in C++</a> </li>
+				 <li> <a href="#">2. Raw string literal in C++</a> </li>
+				 <li> <a href="#">3. Array of String in C++ (5 Different ways to Create)</a> </li>
+				 <li> <a href="#">4. Tokenizing a string in C++</a> </li>
+				 <li> <a href="#">5. strrchar() function in C/C++</a> </li>
+				 <li> <a href="#">6. stringstream in C++ and its applications</a> </li>
+				</ul>
+			  </div>
+			</div>
+				 
+			
+			
+			<div class="blogText-container">
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>Functions</h6>			
+			<!-- <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i> <b>Functions<b></a>-->
+			
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. Functions in C/C++</a> </li>
+				 <li> <a href="#">2. Default Arguments in C++</a> </li>
+				 <li> <a href="#">3. Inline Functions in C++</a> </li>
+				 <li> <a href="#">4. Inline Functions in C++</a> </li>
+				 <li> <a href="#">5. Return from void functions in C++</a> </li>
+				 <li> <a href="#">6. Factors in C++</a> </li>
+				</ul>
+			  </div>
+			</div>
+				 
+		    
+			
+			<div class="blogText-container">
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>Pointers & References</h6> 
+			<!-- <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i> <b>Pointers & Refercences<b></a> -->
+			
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. Pointers in C and C++ | Set1 (Introduction, Arithmetic and Array)</a> </li>
+				 <li> <a href="#">2. Opaque Pointer</a> </li>
+				 <li> <a href="#">3. References in C++</a> </li>
+				 <li> <a href="#">4. 'this' pointer in C++</a> </li>
+				 <li> <a href="#">5. Introduction of Smart Pointers in C++ and It's Types</a> </li>
+				 <li> <a href="#">6. pointers vs References in C++</a> </li>
+				</ul>
+			  </div>
+			</div>
+				 
+		    
+			
+			<div class="blogText-container">
+			
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>Object Oriented Programing</h6>			
+			<!-- <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i> <b>Object Oriented Programing<b></a> -->
+			
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. Object Oriented Programming in C++</a> </li>
+				 <li> <a href="#">2. C++ Classes and Object</a> </li>
+				 <li> <a href="#">3. Inheritance in C++</a> </li>
+				 <li> <a href="#">4. Polymorphism in C++</a> </li>
+				 <li> <a href="#">5. Encapsulation in C++</a> </li>
+				 <li> <a href="#">6. Abstraction in C++</a> </li>
+				 <li> <a href="#">7. Function Overloading in C++</a> </li>
+				 <li> <a href="#">8. Operator overloading in C++</a> </li>
+				</ul>
+			  </div>
+			</div>
+				 
+		     
+			
+			<div class="blogText-container">
+			 
+			 
+			<!--<a href="#"><i class="fa fa-edit" aria-hidden="true"></i> <strong>Constructors and Destructors<strong></a> -->
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>Constructors and Destructors</h6>
+			
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. Constructors in C++</a> </li>
+				 <li> <a href="#">2. Copy Constructor in C++</a> </li>
+				 <li> <a href="#">3. Destructors in C++</a> </li>
+				 <li> <a href="#">4. C++ Internals | Default Constructor | Set1</a> </li>
+				 <li> <a href="#">5. Private Destructor</a> </li>
+				</ul>
+			  </div>
+			</div>
+					 
+		    
+			
+			
+			<div class="blogText-container">
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>Exception Handling</h6>
+			<!-- <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i> <b>Exception Handling<b></a> -->
+		
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. Exception Handling in C++</a> </li>
+				 <li> <a href="#">2. Stack Unwinding in C++</a> </li>
+				 <li> <a href="#">3. Catching base and derived classes as exceptions</a> </li>
+				 <li> <a href="#">4. Catch block and type conversion in C++</a> </li>
+				 <li> <a href="#">5. Exception handling and object destruction | Set 1</a> </li>
+				</ul>
+			  </div>
+			</div>
+			 
+		    
+			
+			
+			<div class="blogText-container">
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>File Handling</h6>			
+			<!-- <li><a href="#"><i class="fa fa-edit" aria-hidden="true"></i> <b>File Handling<b></a> -->
+	
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. File Handling through C++ Classes</a> </li>
+				 <li> <a href="#">2. Read/Write Class Objects from/to file in C++</a> </li>
+				 <li> <a href="#">3. C++ Program to create a file</a> </li>
+				 <li> <a href="#">4. CSV file management using C++</a> </li>
+				 <li> <a href="#">5. Four file Handling Hacks which every C/C++ Programmer should know</a> </li>
+				</ul>
+			  </div>
+			</div>
+		 
+		    
+			<div class="blogText-container">
+			<h6>&nbsp &nbsp &nbsp <i class="fa fa-edit" aria-hidden="true"></i>Standard Template Library(STL)</h6>			
+			<!-- <li> <a href="#"><i class="fa fa-edit" aria-hidden="true"></i> <b>Standard Template Library(STL)<b></a>  -->
+	
+			 <div class="sub-menu-2">
+				<ul>
+				 <li> <a href="#">1. The C++ Standard Template Library(STL)</a> </li>
+				 <li> <a href="#">2. Containers in C++ STL (STL)</a> </li>
+				 <li> <a href="#">3. Pair in C++ Standard Template Library (STL)</a> </li>
+				 <li> <a href="#">4. List in C++ Standard Template Library (STL)</a> </li>
+				 <li> <a href="#">5. Deque in C++ Standard Template Library (STL)</a> </li>
+				 <li> <a href="#">6. Queue in C++ Standard Template Library (STL)</a> </li>
+				 <li> <a href="#">7. Priority Deque in C++ Standard Template Library (STL)</a> </li>
+				 <li> <a href="#">8. Set in C++ Deque in C++ Standard Template Library (STL)</a> </li>
+				 <li> <a href="#">9. Unordered Sets in C++ Standard Template Library (STL)</a> </li>
+				 <li> <a href="#">10. Multiset in C++ Standard Template Library (STL)</a> </li>
+				 <li> <a href="#">11. Map in C++ Standard Template Library (STL)</a> </li>
+				 <li> <a href="#">12. Advanced C++ Standard Template Library (STL)</a> </li>
+				 <li> <a href="#">13. Library in C++ Standard Template Library (STL)</a> </li>
+				</ul>
+			  </div>
+			</div>
+				 
+		    <br>	
+        <br> <br> <br>
+		
+</div>
+	
+        <script type="text/javascript" src="mobile.js"></script>
+    </body>
+</html>
