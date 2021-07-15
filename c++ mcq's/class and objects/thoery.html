@@ -1,1 +1,584 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <title>C++ Class and object theory</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+ background: white;
+}
+
+#mcq{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.mcq1 ul li a{
+ color: red;
+}
+
+.first{
+ color: red;
+}
+
+#wholefiile{
+ background: #F0EDED;
+}
+
+</style>
+
+</head>
+    <body> 
+		<header>
+			<img class="logo" alt="logo" src="../../logo.jpeg">
+			<nav>
+				<ul class="nav__links">
+					<li><a href="FrontPage.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+					<li><div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-clone" aria-hidden="true"></i> Courses</a>                          
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Data Structure</a></li><br>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					  </div></li>
+					<li><a href="TodoList/index.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li>
+					
+					  <li><div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+							<ul class="dropdown-menu" aria-labelledby="Courses">
+								<li><a class="dropdown-item" href="#">Contest 1</a></li>
+								<li><a class="dropdown-item" href="#">Contest 2</a></li>
+								<li><a class="dropdown-item" href="#">Contest 3</a></li>
+								<li><a class="dropdown-item" href="#">Contest 4</a></li>
+							</ul>
+						  </div></li>
+					<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> About Us</a></li>
+					<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+					<li><a href="rowtable.html"><i class="fa fa-book-reader" aria-hidden="true"></i>Diamond</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#"><button>Login/Register</button></a>
+			<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+		   -->
+		</header>
+	<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+	</div>
+	<br>
+	<div id="wholefiile" class="wholefile">
+	
+	
+	<p id="mcq"><b>Que1. Which of the following statement is correct?</b><br>
+	   Ans: a. Class is an instance of object <br>
+       &nbsp &nbsp &nbsp &nbsp b. Object is an instance of a class<br>
+       &nbsp &nbsp &nbsp &nbsp c. Class is an instance of data type <br>
+       &nbsp &nbsp &nbsp &nbsp d. Object is an instance of data type <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b. Object is an instance of a class</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+    </p>			
+    <br><br>	
+	
+	   <p id="mcq"><b>Que2. What is the difference between structure and class in C++? </b><br>
+	   Ans: a. A struct cannot have member functions.  <br>
+       &nbsp &nbsp &nbsp &nbsp b. A class has a default privacy specification of public.  <br>
+       &nbsp &nbsp &nbsp &nbsp c. A class has a default privacy specification of private  <br>
+       &nbsp &nbsp &nbsp &nbsp d. A struct cannot have private members.<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">C. A class has a default privacy specification of private</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		
+		<p id="mcq"><b>Que3. If you want to write multiple functions in a class with same name, then what C++ feature will you use? </b><br>
+	   Ans: a. Function overriding<br>
+       &nbsp &nbsp &nbsp &nbsp b. Encapsulation<br>
+       &nbsp &nbsp &nbsp &nbsp c. Function overloading<br>
+       &nbsp &nbsp &nbsp &nbsp d. None<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">C. Function overloading
+</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		<p id="mcq"><b>Que4. What is the difference between an object and a class?</b><br>
+	   Ans: a. An object is an extension of the class construct whose default access privilege is public.<br>
+       &nbsp &nbsp &nbsp &nbsp b. The term object is just another way of referring to the public data members of a class.<br>
+       &nbsp &nbsp &nbsp &nbsp c. An object is an initialized class variable.<br>
+       &nbsp &nbsp &nbsp &nbsp d. A class is an initialized object variable<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) An object is an initialized class variable.</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		<p id="mcq"><b>Que5. If 2 classes derive one base class and redefine a function of base class, also overload some operators inside class body. Among these two things of function and operator overloading, where is polymorphism used?</b><br>
+	   Ans: a. Function overloading only<br>
+       &nbsp &nbsp &nbsp &nbsp b. Operator overloading only<br>
+       &nbsp &nbsp &nbsp &nbsp c. Both of these are using polymorphism<br>
+       &nbsp &nbsp &nbsp &nbsp d. Either function overloading or operator overloading because polymorphism can be applied only once in a program<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) Either function overloading or operator overloading because polymorphism can be applied only once in a program
+</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		
+		<p id="mcq"><b>Que6. Constructor is executed when _____.</b><br>
+	   Ans: a. An object goes out of scope.<br>
+       &nbsp &nbsp &nbsp &nbsp b. A class is declared<br>
+       &nbsp &nbsp &nbsp &nbsp c. An object is created<br>
+       &nbsp &nbsp &nbsp &nbsp d. An object is used<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">C) An object is created</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		
+		<p id="mcq"><b>Que7. Which of the following is a valid class declaration?</b><br>
+	   Ans: a. Class A {int x;};<br>
+       &nbsp &nbsp &nbsp &nbsp b. Class B{}<br>
+       &nbsp &nbsp &nbsp &nbsp c. Public class A{}<br>
+       &nbsp &nbsp &nbsp &nbsp d. Object A {int x;};<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) Class A {int x;};</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		
+		<p id="mcq"><b>Que8. Which of the following statements is correct when a class is inherited publicly?</b><br>
+	   Ans: a. Public members of the base class become protected members of derived class.<br>
+       &nbsp &nbsp &nbsp &nbsp b. Public members of the base class become private members of derived class.<br>
+       &nbsp &nbsp &nbsp &nbsp c. Private members of the base class become protected members of derived class.<br>
+       &nbsp &nbsp &nbsp &nbsp d. Public members of the base class become public members of derived class.<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) Public members of the base class become public members of derived class.
+</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		
+		<p id="mcq"><b>Que9. What is the size of empty class?</b><br>
+	   Ans: a. 0<br>
+       &nbsp &nbsp &nbsp &nbsp b. 1<br>
+       &nbsp &nbsp &nbsp &nbsp c. 2<br>
+       &nbsp &nbsp &nbsp &nbsp d. 4<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) 1</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		
+		<p id="mcq"><b>Que10. A…………can only be called by another function that is a member of its class.</b><br>
+	   Ans: a. constant member function<br>
+       &nbsp &nbsp &nbsp &nbsp b. private member function<br>
+       &nbsp &nbsp &nbsp &nbsp c. static member function<br>
+       &nbsp &nbsp &nbsp &nbsp d. friend function<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) private member function</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		
+		<p id="mcq"><b>Que11. Static variables are associated with the class itself rather than with any class object, they are also known as……………</b><br>
+	   Ans: a. class variables<br>
+       &nbsp &nbsp &nbsp &nbsp b. object variables<br>
+       &nbsp &nbsp &nbsp &nbsp c. function variables<br>
+       &nbsp &nbsp &nbsp &nbsp d. internal variables<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) class variables</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		
+		<p id="mcq"><b>Que12. Static variables are like…………………as they are declared in a class declaration and defined in the source file.
+</b><br>
+	   Ans: a. inline member function<br>
+       &nbsp &nbsp &nbsp &nbsp b. non-inline member function<br>
+       &nbsp &nbsp &nbsp &nbsp c. static member function<br>
+       &nbsp &nbsp &nbsp &nbsp d. dynamic member function<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) non-inline member function</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>	
+		
+		
+	   <p id="mcq"><b>Que13. Which statement is true for static data member of a class?</b><br>
+	   Ans: a. A static member function can access only static data member of a class and static data member is shared among all the objects of a class.<br>
+       &nbsp &nbsp &nbsp &nbsp b. A Static data member is shared among all the objects of a class.<br>
+       &nbsp &nbsp &nbsp &nbsp c. A Static data member can be accessed directly from main.<br>
+       &nbsp &nbsp &nbsp &nbsp d. A Static member function can access  only static data member of a class.<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) A static member function can access only static data member of a class and static data member is shared among all the objects of a class</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+
+        <p id="mcq"><b>Que13. True and false statements about Static function in given C++ code example is/are <br>
+                             (I)Static function of a class can be called by class name using scope resolution operator  i.e. :: <br>
+							 (II)Static function can receive both static and non-static data members of a class <br>
+							 (III)Static function is not the part of an object of a class <br></b><br>
+	   Ans: a. I ans II<br>
+       &nbsp &nbsp &nbsp &nbsp b. I only<br>
+       &nbsp &nbsp &nbsp &nbsp c. I and III<br>
+       &nbsp &nbsp &nbsp &nbsp d. I,II and III<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> c) I and III</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+		
+		<p id="mcq"><b>Que14. <br>
+		&nbsp &nbsp &nbsp &nbsp class box <br>
+		&nbsp &nbsp &nbsp &nbsp{ <br>
+		&nbsp &nbsp &nbsp &nbsp	&nbsp private: <br>
+		&nbsp &nbsp &nbsp &nbsp	&nbsp &nbsp integer height, weight; <br>
+		&nbsp &nbsp &nbsp &nbsp	&nbsp public: <br>
+		&nbsp &nbsp &nbsp &nbsp	&nbsp function input(int a, int b) <br>
+		&nbsp &nbsp &nbsp &nbsp	&nbsp { <br>
+		&nbsp &nbsp &nbsp &nbsp	&nbsp &nbsp height=a; <br>
+		&nbsp &nbsp &nbsp &nbsp	&nbsp &nbsp weight=b; <br>
+		&nbsp &nbsp &nbsp &nbsp	&nbsp } <br>
+		&nbsp &nbsp &nbsp &nbsp }; <br>
+		&nbsp &nbsp &nbsp &nbsp	function main() <br>
+		&nbsp &nbsp &nbsp &nbsp	{ <br>
+		&nbsp &nbsp &nbsp &nbsp	&nbsp &nbsp box b1,b2; <br>
+		&nbsp &nbsp &nbsp &nbsp	} <br>
+
+		</b><br>
+	   Ans: a. “Box” is a class with b1 and b2 as its objects, with “height” and “weight” as its attributes.<br>
+       &nbsp &nbsp &nbsp &nbsp b. “Box” is a class with b1 and b2 as its objects, with “height” and “weight” as its objects.<br>
+       &nbsp &nbsp &nbsp &nbsp c. “Box” is a class with b1, b2,  “height” and “weight” as its attributes.<br>
+       &nbsp &nbsp &nbsp &nbsp d. “Box” is a class with b1, b2,  “height” and “weight” as its objects<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) “Box” is a class with b1 and b2 as its objects, with “height” and “weight” as its attributes</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+		
+		<p id="mcq"><b>Que15. Which of the following statements is correct? </b><br>
+	   Ans: a. First time method of a class is called, the constructor method is called.<br>
+       &nbsp &nbsp &nbsp &nbsp b. Every time method of a class is called, the constructor method is called.<br>
+       &nbsp &nbsp &nbsp &nbsp c. Every time an instance of a class is created, the constructor method is called.<br>
+       &nbsp &nbsp &nbsp &nbsp d. none<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) Every time an instance of a class is created, the constructor method is called.</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+		
+		
+		<p id="mcq"><b>Que16.
+		Which of the following is not correct (in C++)?<br>
+		1. Class templates and function templates are instantiated in the same way<br>
+		2. Class templates differ from function templates in the way they are initiated<br>
+		3. Class template is initiated by defining an object using the template argument<br>
+		4. Class templates are generally used for storage classes<br>
+
+		</b><br>
+	   Ans: a. 1<br>
+       &nbsp &nbsp &nbsp &nbsp b. 2,4<br>
+       &nbsp &nbsp &nbsp &nbsp c. 2,3,4<br>
+       &nbsp &nbsp &nbsp &nbsp d. 4<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) 2,3,4</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+		
+		
+		<p id="mcq"><b>Que17. A friend function declaration: </b><br>
+	   Ans: a. gives nonmember functions access to hidden class members<br>
+       &nbsp &nbsp &nbsp &nbsp b. is another term for an overloaded function within a class<br>
+       &nbsp &nbsp &nbsp &nbsp c. is any function created for you by the compiler (such as a default constructor)<br>
+       &nbsp &nbsp &nbsp &nbsp d. is any function outside the class with the same name as a function in the class<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) gives nonmember functions access to hidden class members</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+
+       <!-- 
+	   <p id="mcq"><b>Que13.</b><br>
+	   Ans: a. <br>
+       &nbsp &nbsp &nbsp &nbsp b. <br>
+       &nbsp &nbsp &nbsp &nbsp c. <br>
+       &nbsp &nbsp &nbsp &nbsp d. <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br> -->
+
+
+		
+	
+	
+	
+    </div>
+
+	 
+	
+  <script type="text/javascript" src="mobile.js"></script>   
+    </body>	
+</html>
