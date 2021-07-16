@@ -1,1 +1,508 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <title>C++ Class and object theory</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+ background: white;
+}
+
+#mcq{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.mcq1 ul li a{
+ color: red;
+}
+
+.first{
+ color: red;
+}
+
+#wholefiile{
+ background: #F0EDED;
+}
+
+</style>
+
+</head>
+    <body> 
+		<header>
+			<img class="logo" alt="logo" src="../../logo.jpeg">
+			<nav>
+				<ul class="nav__links">
+					<li><a href="FrontPage.html"> Home</a></li>
+					<!--<li><a href="FrontPage.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li> -->
+					<li><div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false"> Courses</a>                          
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Data Structure</a></li><br>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					  </div></li>
+					<!-- <li><a href="TodoList/index.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li> -->
+					<li><a href="TodoList/index.html"> Practice</a></li>
+					
+					  <li><div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+							<ul class="dropdown-menu" aria-labelledby="Courses">
+								<li><a class="dropdown-item" href="#">Contest 1</a></li>
+								<li><a class="dropdown-item" href="#">Contest 2</a></li>
+								<li><a class="dropdown-item" href="#">Contest 3</a></li>
+								<li><a class="dropdown-item" href="#">Contest 4</a></li>
+							</ul>
+						  </div></li>
+					<li><a href="#"> About Us</a></li>
+					<li><a href="#"> Contact</a></li>
+					<li><a href="rowtable.html">Diamond</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#"><button>Login/Register</button></a>
+			<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+		   -->
+		</header>
+	<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+	</div>
+	<br>
+	<div id="wholefiile" class="wholefile">
+	 
+	<p id="mcq"><b>Que.1 Find the output of following code? </b><br>
+        &nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp class B <br>
+		&nbsp { <br>
+		 &nbsp &nbsp int b; <br>
+			&nbsp &nbsp public: <br>
+			&nbsp &nbspB(){}<br>
+			&nbsp &nbspB(int i)<br>
+			&nbsp &nbsp{<br>
+			 &nbsp &nbsp &nbsp b = i; <br>
+			&nbsp &nbsp}<br>
+			&nbsp &nbsp int show()<br>
+			&nbsp &nbsp {<br>
+			  &nbsp &nbsp &nbsp return b; <br>
+			&nbsp &nbsp }<br>
+		&nbsp };<br>
+		&nbsp class C <br>
+		&nbsp{ <br>
+			&nbsp &nbsp B b; <br>
+			&nbsp &nbsp public: <br>
+			&nbsp &nbsp C(int i) <br>
+			&nbsp &nbsp { <br>
+			  &nbsp &nbsp &nbsp b = B(i); <br>
+			&nbsp &nbsp } <br>
+			&nbsp &nbsp friend void show() <br>
+			&nbsp &nbsp { <br>
+				&nbsp &nbsp &nbsp C c(10); <br>
+				&nbsp &nbsp &nbsp cout<< c.b.show();
+				 
+			<br>&nbsp &nbsp } <br>
+		&nbsp}; <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp C c(1); <br>
+			&nbsp &nbsp c.show(); <br>
+			&nbsp &nbsp return 0; <br>
+		&nbsp} <br>
+
+	  <br>
+	   Ans: a. value of b is 1234545 <br>
+       &nbsp &nbsp &nbsp &nbsp b. value of b is 10<br>
+       &nbsp &nbsp &nbsp &nbsp c. error<br>
+       &nbsp &nbsp &nbsp &nbsp d. segmentation fault<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) error</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+    <br><br>
+	
+	
+	<p id="mcq"><b>Que.2 Find the output of following code? </b><br>
+        &nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp class Test <br>
+		&nbsp { <br>
+		 &nbsp &nbsp int a; <br>
+			&nbsp &nbsp public: <br>
+			&nbsp &nbsp Test(int b)<br>
+			&nbsp &nbsp { <br>
+			&nbsp &nbsp &nbsp a = b; <br>
+			&nbsp &nbsp	}<br>
+			&nbsp &nbsp friend void show(); <br>
+			&nbsp}; <br>
+			
+			&nbsp void Test::show()<br>
+			&nbsp{
+			  &nbsp &nbsp &nbsp Test t(8); <br>
+			  &nbsp &nbsp &nbsp cout<< "value of a is :" << t.a;
+              <br>
+			&nbsp}
+			
+			 
+	
+
+	  <br>
+	   Ans: a. value of a is 8 <br>
+       &nbsp &nbsp &nbsp &nbsp b. value of a is 10<br>
+       &nbsp &nbsp &nbsp &nbsp c. error<br>
+       &nbsp &nbsp &nbsp &nbsp d. segmentation fault<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) error</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>
+        <br> <br>
+		
+	   <p id="mcq"><b>Que.3 Find the output of following code?</b><br>
+	   
+	    &nbsp #include< bits/stdc++.h><br>
+        &nbsp using namespace std; <br>
+        &nbsp class Empty {}; <br>
+  
+		&nbsp int main()<br>
+		&nbsp {<br>
+		  &nbsp &nbsp cout<< sizeof(Empty); 
+		  &nbsp &nbsp <br> &nbsp &nbsp return 0;<br>
+		&nbsp }<br>
+
+	   Ans: a. Non zero value<br>
+       &nbsp &nbsp &nbsp &nbsp b. 0<br>
+       &nbsp &nbsp &nbsp &nbsp c. Compile time error <br>
+       &nbsp &nbsp &nbsp &nbsp d. Run time error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) Non zero value</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+		
+	   <p id="mcq"><b>Que.4 Find the output of following code?</b><br>
+	   
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h><br>
+	   &nbsp class Test <br>
+	   &nbsp { <br>
+         &nbsp &nbsp int x; <br>
+	   &nbsp }; <br>
+	   &nbsp int main() <br>
+	   &nbsp { <br>
+	     &nbsp &nbsp Test t; <br>
+	     &nbsp &nbsp cout<< t.x; &nbsp <br>
+	     &nbsp &nbsp return 0; <br>
+	   &nbsp } <br>
+ 
+	   
+	   Ans: a. 0<br>
+       &nbsp &nbsp &nbsp &nbsp b. 1<br>
+       &nbsp &nbsp &nbsp &nbsp c. Garbage value<br>
+       &nbsp &nbsp &nbsp &nbsp d. Compiler error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) Compiler error</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+
+		
+	   <p id="mcq"><b>Que.5 Find the output of following code?</b><br>
+	   	&nbsp #include< bits/stdc++.h> <br>
+		&nbsp using namespace std; <br>
+		&nbsp class Test <br>
+		&nbsp {
+			&nbsp &nbsp static int x; <br>
+			&nbsp &nbsp int *ptr; <br>
+			&nbsp &nbsp int y;<br>
+		&nbsp }; <br>
+		 
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp Test t; <br>
+			&nbsp &nbsp cout << sizeof(t) << " "; &nbsp <br>
+			&nbsp &nbsp cout << sizeof(Test *); &nbsp <br>
+		&nbsp } <br>
+	   
+	   Ans: a. 12 4<br>
+       &nbsp &nbsp &nbsp &nbsp b. 12 12 <br>
+       &nbsp &nbsp &nbsp &nbsp c. 16 8 <br>
+       &nbsp &nbsp &nbsp &nbsp d. 8 8<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) 16 8</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+		
+	   <p id="mcq"><b>Que.6 Find the output of following code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp class A <br>
+	   &nbsp { <br>
+	   &nbsp &nbsp &nbsp mutable int a; <br>
+	   &nbsp &nbsp public: <br>
+	   &nbsp &nbsp A() <br>
+	   &nbsp &nbsp { <br>
+		&nbsp &nbsp &nbsp cout<<"Default constructor called\n"; &nbsp <br>
+	   &nbsp &nbsp } <br>
+	   &nbsp &nbsp A(const A& a) <br>
+	   &nbsp &nbsp { <br>
+		&nbsp &nbsp cout<<"Copy Constructor called\n"; &nbsp <br>
+	   &nbsp &nbsp } <br>
+	   &nbsp }; <br>
+	   &nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp A obj; <br>
+			&nbsp &nbsp A a1 = obj; <br>
+			&nbsp &nbsp A a2(obj); <br>
+		&nbsp } <br>
+
+	   Ans: a. Default constructor called<br>
+       &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Copy constructor called <br>
+       &nbsp &nbsp &nbsp &nbsp b. Copy constructor called  <br>
+       &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Default constructor called <br>
+       &nbsp &nbsp &nbsp &nbsp c. Default constructor called <br>
+       &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Default constructor called <br>
+       &nbsp &nbsp &nbsp &nbsp d. Default constructor called <br>
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Copy constructor called <br>
+    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp Copy constructor called <br><br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) Default constructor called <br>
+    &nbsp Copy constructor called <br>
+    &nbsp Copy constructor called <br>
+</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+       <p id="mcq"><b>Que.7 Find the output of following code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp class Student <br>
+	   &nbsp { <br>
+			&nbsp &nbsp &nbsp int roll_no; <br>
+			&nbsp &nbsp &nbsp int marks; <br>
+		 &nbsp &nbsp public: <br>
+		 &nbsp &nbsp Student() <br>
+		 &nbsp &nbsp { <br>
+			&nbsp &nbsp &nbsp roll_no=0; <br>
+			&nbsp &nbsp &nbsp marks=0; <br>
+		 &nbsp &nbsp } <br>
+		&nbsp &nbsp Student(int r=0, int m) <br>
+		&nbsp &nbsp {<br>
+			&nbsp &nbsp &nbsp roll_no=r; <br>
+			&nbsp &nbsp &nbsp marks=m; <br>
+		&nbsp &nbsp }<br>
+		&nbsp &nbsp void show_data() <br>
+		&nbsp &nbsp { <br>
+		    &nbsp &nbsp &nbsp cout<<"\n Roll no=:"<< roll_no;&nbsp <br> 
+		    &nbsp &nbsp &nbsp cout<<"\t Marks=“<< marks; &nbsp <br>
+		&nbsp &nbsp }<br>
+	   &nbsp}; <br>
+	   &nbsp int main() <br>
+	   &nbsp { <br>
+		&nbsp &nbsp Student s1; <br>
+		&nbsp &nbsp s1.show_data(); <br>
+		&nbsp &nbsp Student s2(30); <br>
+		&nbsp &nbsp s2.show_data(); <br>
+		&nbsp &nbsp return 0; <br>
+	   &nbsp } <br>
+
+	   
+	   Ans: a. 0,0 0,30 <br>
+       &nbsp &nbsp &nbsp &nbsp b. 0,0 30,0 <br>
+       &nbsp &nbsp &nbsp &nbsp c. compile time error<br>
+       &nbsp &nbsp &nbsp &nbsp d. runtime error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) compile time error</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+        
+       
+	   <p id="mcq"><b>Que.8 Find the output of following code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp class A <br>
+	   &nbsp { <br>
+	   &nbsp &nbsp &nbspint a; <br>
+	   &nbsp &nbsp A() <br>
+	   &nbsp &nbsp { <br>
+	    &nbsp &nbsp &nbsp a =9; <br>
+	   &nbsp &nbsp } <br>
+	   &nbsp &nbsp public: <br>
+		&nbsp &nbsp void assign(int i) <br>
+		&nbsp &nbsp { <br>
+		  &nbsp &nbsp &nbsp a = i;<br>
+		&nbsp &nbsp }<br>
+		&nbsp &nbsp int return_value() <br>
+		&nbsp &nbsp {
+			&nbsp &nbsp &nbsp return a; <br>
+		&nbsp &nbsp } <br>
+	   &nbsp }; <br>
+	   &nbsp int main() <br>
+	   &nbsp { <br>
+	    &nbsp &nbsp A obj; <br>
+		&nbsp &nbsp obj.assign(13); <br>
+		&nbsp &nbsp cout<<obj.return_value(); &nbsp <br>
+		&nbsp } <br>
+
+	   Ans: a. 9<br>
+       &nbsp &nbsp &nbsp &nbsp b. 13<br>
+       &nbsp &nbsp &nbsp &nbsp c. Error<br>
+       &nbsp &nbsp &nbsp &nbsp d. Segmentation fault<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) Error</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+
+       <!-- 
+	   <p id="mcq"><b>Que.</b><br>
+	   Ans: a. <br>
+       &nbsp &nbsp &nbsp &nbsp b. <br>
+       &nbsp &nbsp &nbsp &nbsp c. <br>
+       &nbsp &nbsp &nbsp &nbsp d. <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br> -->
+    </div>
+  <script type="text/javascript" src="mobile.js"></script>   
+    </body>	
+</html>
