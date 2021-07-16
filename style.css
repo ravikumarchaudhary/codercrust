@@ -396,8 +396,9 @@ wrapper1 {
 }
 
 .wholefile {
-  background-color: #B5B5B5;
+  background-color: white;
   border: 1px solid black;
+  border-radius:10px;
 }
 
 .class_h6 {
