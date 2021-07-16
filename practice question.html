@@ -19,11 +19,11 @@
  background: white;
 }
 	
-*{
+.bdy{
 	margin: 0;
 	paddnig: 0;
 	box-sizing: border-box;
-	
+	font-family: 'Poppins', sans-serif;
 }
 
 .io{
@@ -36,7 +36,6 @@
 	line-height: 40px;
 	padding: 8px 25px;
 	border-radius: 5px;
-	font-family: 'Poppins', sans-serif;
 }
 
 .io label{
@@ -45,12 +44,10 @@
 	font-weight: 500;
 	display: block;
 	cursor: pointer;
-	font-family: 'Poppins', sans-serif;
 }
 .buttonio span{
 	float: right;
-	line-height: 35px;
-	font-family: 'Poppins', sans-serif;
+	line-height: 35px; 
 }
 
 .io ul{
@@ -63,7 +60,6 @@
 	width: 100%;
 	border-radius: 5px;
 	display: none;
-	font-family: 'Poppins', sans-serif;
 }
 
 [id^=btn]:checked + ul{
@@ -80,7 +76,6 @@
 	top: -10px;
 	transform: rotate(45deg);
 	z-index: -1;
-	font-family: 'Poppins', sans-serif;
 }
 
 .io ul li{
@@ -88,12 +83,10 @@
 	padding: 8px;
 	cursor: pointer;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
-	font-family: 'Poppins', sans-serif;
 }
 
 .io ul li label{
 	font-size: 18px;
-	font-family: 'Poppins', sans-serif;
 }
 
 .io ul li a{
@@ -101,23 +94,19 @@
 	text-decoration: none;
 	font-size: 18px;
 	display: block;
-	font-family: 'Poppins', sans-serif;
 }
 
 .io ul ul{
 	position: static;
-	font-family: 'Poppins', sans-serif;
 }
 .menu1 li{
 	color: white;
-	font-family: 'Poppins', sans-serif;
 }
 
 .io ul ul li{
 	line-height: 30px;
 	padding-left: 30px;
 	border-bottom: none;
-	font-family: 'Poppins', sans-serif;
 }
 
 .io ul li span{
@@ -125,13 +114,11 @@
 	float: right;
 	margin-top: 10px;
 	padding: 0 10px;
-	font-family: 'Poppins', sans-serif;
 }
 
 .io ul ul li a{
 	color: #e6e6e6;
 	font-size: 17px;
-	font-family: 'Poppins', sans-serif;
 }
 
 .io ul li a:hover{
@@ -148,7 +135,6 @@ input{
         position: absolute;
 	top: 20%;
 	left: 50%;
-	font-family: 'Poppins', sans-serif;
 	}
 	
 	
@@ -156,7 +142,6 @@ input{
         position: absolute;
 	top: 20%;
 	left: 80%;
-	font-family: 'Poppins', sans-serif;
 	}
 
 p{color: white;}
@@ -245,7 +230,7 @@ p{color: white;}
 	
 	
 	
-<div>
+<div class="bdy">
   <nav class="io" id="cplus">
     <label for="btncplus" class="buttonio"> C++ Lang Mcq's
 	 <span class="fas fa-caret-down"> </span>
