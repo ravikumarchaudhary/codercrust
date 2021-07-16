@@ -422,13 +422,13 @@ wrapper1 {
 }
 
 .grid-container div a:hover {
-  text-decoration: underline;
-  background: white;
+  text-decoration: none;
+  background: #E8E8E8;
   color: black;
 }
 
 .grid-container > div {
-  background-color: #F0EDED;
+  background-color: white;
   border: none;
   text-align: left;
   font-size: 30px;
