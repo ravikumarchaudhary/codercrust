@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>list and forward_list</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		body {
+			background: black;
+		}
+
+		p {
+			color: white;
+		}
+		ul{
+		font: 12px "Montserrat", sans-serif;
+		}
+		
+		a:hover{
+		color:green;
+		}
+		
+		#class1 {
+			outline: solid 1px;
+		
+			outline-color: white;
+		}
+	</style>
+
+</head>
+
+<body>
+	<header>
+		<img class="logo" alt="logo" src="logo.jpeg">
+		<nav>
+			<ul class="nav__links">
+				<li><a href="home.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+				<li>
+					<div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+							aria-expanded="false"><i class="fa fa-clone" aria-hidden="true"></i> Courses</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="DataStructure.html" id="rcpb1">Data Structure</a></li>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="TodoList/index.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li>
+
+				<li>
+					<div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+							aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					</div>
+				</li>
+				<li><a href="#"><i class="fa fa-user" aria-hidden="true"></i> About Us</a></li>
+				<li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i> Contact</a></li>
+				<li><a href="rowtable.html"><i class="fa fa-book-reader" aria-hidden="true"></i>Diamond</a></li>
+			</ul>
+		</nav>
+		<a class="cta" href="#"><button>Login/Register</button></a>
+		<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+	                -->
+		<div class="hamburger" onclick="openNav()" id="hamburger-menu">
+			<i class="fa fa-bars fa-2x"></i>
+		</div>
+	</header>
+	<div id="mobile__menu" class="overlay">
+		<a class="close" onclick="closeNav()">&times;</a>
+		<div class="overlay__content">
+			<a href="#">Home</a>
+			<a href="practice question.html">Practice</a>
+			<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+					aria-expanded="false">Courses</a>
+				<ul class="dropdown-menu" aria-labelledby="Courses">
+					<li><a class="dropdown-item" href="#">C language</a></li>
+					<li><a class="dropdown-item" href="#">C++ language</a></li>
+					<li><a class="dropdown-item" href="#">Python language</a></li>
+					<li><a class="dropdown-item" href="#">Java language</a></li>
+				</ul>
+			</div>
+			<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown"
+					aria-expanded="false">Contest</a>
+				<ul class="dropdown-menu" aria-labelledby="Courses">
+					<li><a class="dropdown-item" href="#">Contest 1</a></li>
+					<li><a class="dropdown-item" href="#">Contest 2</a></li>
+					<li><a class="dropdown-item" href="#">Contest 3</a></li>
+					<li><a class="dropdown-item" href="#">Contest 4</a></li>
+				</ul>
+			</div>
+			<a href="#">About Us</a>
+			<a href="#">Contact</a>
+			<a href="#">Diamond</a>
+		</div>
+	</div>
+	<br>
+	<div class="wholefile">
+		<div class="toggle-page"> <a id="prev1" href="vector.html">
+				<< Prev</a>
+					<a id="next1" href="dequeue.html">Next >></a></div>
+		<br> <br> <br>
+		<h3 class="rcpb"><b><i>list And forward_list </i></b></h3>
+		<p id="idhai" class="def1">Last Updated: 14 july 2021</p><br>
+		<p class="def1">A<b><i> list </i></b>are sequence containers which are implemented like doubly-linked lists.
+     Internally like in doubly linked list the association to each element of a link to the element preceding it and a link to the element following it.
+     <br>List are very similar to forward_list ,the  main difference being that forward_list objects are single-linked lists, and thus they can only be iterated forwards,
+     in exchange for being somewhat smaller and more efficient.
+     <br>In comparision to other sequence containers like array, vector and deque, lists perform generally better in inserting, 
+     extracting and moving elements in any position within the container for which an iterator has already been obtained.
+     <br>The  drawback of lists and forward_lists compared to these other sequence containers is that they lack direct access to the elements by their position.</p><br><br>
+     <p class="def1" id="idhai"><b><u>Methods used in list are </b></u><br>
+     <ul class="def1">
+	     <a href="#"><li>begin()</a> : Returns the iterator pointing to the first element in list.</li>
+		<a href="#"><li>end()</a> : Returns the iterator to the end of the list.</li>
+       <a href="#"><li>rbegin() </a>: Returns the reverse iterator pointing to the last the element. </li>
+       <a href="#"><li>rend()</a> : Returns the reverse iterator pointing to the first element.</li>
+       <a href="#"><li>cbegin() </a>:Returns a constant iterator to begining. </li>
+       <a href="#"><li>cend()</a> : Returns a constant iterator to end.</li>
+       <a href="#"><li>crbegin()</a> : Returns constant reverse iterator to end.</li>
+       <a href="#"><li>crend() </a>: Returns constant reverse iterator to begining.</li>
+       <a href="#"><li>front() </a>: To access the first element.</li>
+       <a href="#"><li>back() </a>: To access the last element</li>
+       <a href="#"><li>empty()</a> : To check whether container is empty.</li>
+       <a href="#"><li>size()</a> : Returns the size.</a></li>
+       <a href="#"><li>max_size()</a> : Returns the maximum size.</li>
+       <a href="#"><li>insert() </a>: Insert the element at a specified position</li>
+       <a href="#"><li>assign() </a>: assigns new element by replacing old.</li>
+       <a href="#"><li>push_front() </a>: Insert element at the beginning .</li>
+       <a href="#"><li>pop_front()</a> : deletes element form front.</li>
+       <a href="#"><li>emplace() </a>: constructs and insert element</li>
+       <a href="#"><li>emplace_front() </a>: constructs and inset element at beginning.</li>
+       <a href="#"><li>push_back()</a> : Insert element at the end</li>
+       <a href="#"><li>pop_front() </a>:Deletes element from front </li>
+       <a href="#"><li>emplace_back()</a> : Construct and insert element at end.</li>
+       <a href="#"><li>erase() </a>: erases element</li>
+       <a href="#"><li>remove() </a>: remove element with specific value</li>
+       <a href="#"><li>clear()</a> : clear the list </li>
+       <a href="#"><li>sort() </a>: sort the list by default ascending</li>
+       <a href="#"><li>merge() </a>: merge the lists</li>
+       <a href="#"><li>swap() </a>: swap content of list</li>
+       <a href="#"><li>splice() </a>: Transfer element from list to list</li>
+       <a href="#"><li>unique() </a>: removes the duplicate values</li>
+       <a href="#"><li>reverse()</a> : reverse the list</li>
+       <a href="#"><li>resize() </a>: change the size</li>
+       </ul><br><br>
+		
+		<p class="def1"><b><u>Implementation of list methods</b></u><br><br></p>
+				
+					
+       
+       
+       <br><br>
+       <p class="def1">A<b><i> forward_list </i></b> are implemented as singly-linked lists,
+       so each of the elements they contain is stored in different and unrelated storage locations.
+       The ordering is kept by the association to each element of a link to the next element in the sequence.<br>
+       However,the main  difference between a forward_list and a list is that forward list are implemented as sinlgy linked list which means
+       they can only move forward as only the address of the next element is stored in association with the previous one ,
+       thus increasing the storage space required to store each element. So we can say forward_list objects are more efficient than list objects,
+       although they can only be iterated forwards.<br>
+       In comparision to other containers like array, vector and deque, forward_list perform generally better in inserting, extracting and moving elements 
+       in any position within the container.<br>
+       The  drawback of forward_lists and lists compared to these other sequence containers is that they lack direct access to the elements by their position.
+       </p><br><br>
+       <p class="def1"><b><u>Methods used in list are </b></u><br>
+     <ul class="def1">
+        <a href="#"><li>begin()</a> : Returns the iterator pointing to the first element in list.</li>
+       <a href="#"><li>end()</a> : Returns the iterator to the end of the list.</li>
+       <a href="#"><li>before_begin() </a>: Returns the iterator before beginning. </li>
+       <a href="#"><li>cbegin() </a>:Returns a constant iterator to beginning. </li>
+       <a href="#"><li>cend() </a>: Returns a constant iterator to end.</li>
+		<a href="#"<li>cbefore_begin() </a>: returns constant iterator before beginning</li>
+       <a href="#"><li>front() </a>: To access the first element.</li>
+       <a href="#"><li>empty() </a>: To check whether container is empty.</li>
+       <a href="#"><li>size() </a>: Returns the size.</li>
+       <a href="#"><li>max_size()</a> : Returns the maximum size.</li>
+       <a href="#"><li>insert_after()</a> : Insert the element at a specified position.</li>
+       <a href="#"><li>assign() </a>: assigns new element by replacing old</li>
+       <a href="#"><li>push_front() </a>: Insert element at the beginning .</li>
+       <a href="#"><li>pop_front()</a> :Deletes element from front </li>
+       <a href="#"><li>emplace_after()</a> : constructs and insert element</li>
+<a href="#"><li>emplace_front() </a>: constructs and insert element at beginning</li>
+      
+       <a href="#"><li>erase_after() </a>: erases element</li>
+       <a href="#"><li>remove() </a>: remove element with specific value</li>
+       <a href="#"><li>clear() </a>: clear the list </li>
+       <a href="#"><li>sort()</a> : sort the list by default ascending</li>
+       <a href="#"><li>merge()</a> : merge the lists</li>
+       <a href="#"><li>swap() </a>: swap content of list</li>
+       <a href="#"><li>splice_after()</a></a> : Transfer element from list to list</li>
+       <a href="#"><li>unique()</a> : removes the duplicate values</li>
+       <a href="#"><li>reverse() </a>: reverse the list</li>
+       <a href="#"><li>resize() </a>: change the size</li>
+       </ul><br><br>
+	
+		<p class="def1"><b><u>Implementation list methods</b></u><br><br></p>
+				
+				
+       
+       <br><br>
+        
+				<h3 class="aryarray"><i>Quick links:</i></h3>
+		<div class="grid-containerarray" id="idhai">
+			<ol>
+				<li><a href="#">Important programs / questions </a></li>
+				<li><a href="#">MCQ's</a></li>
+
+			</ol>
+		</div>
+				</div>
+			
+</p>
+					
+	</div>
+	</div><!-- this is of whole class div -->
+	<br> <br>
+	<footer>
+		<div class="main-footer">
+			<div class="left box">
+				<h3>About us</h3>
+				<div class="content">
+					<p>CoderCrust is developed in order to help students
+						to learn in the most student friendly enviornment with
+						the vision to enhance their knowledge with daily practice
+						and latest updated course content.</p>
+				</div>
+				<div class="social-tab">
+					<a href='#'><span class="fa fa-facebook-official"></span></a>
+					<a href='#'><span class="fa fa-instagram"></span></a>
+					<a href='#'><span class="fa fa-twitter-square"></span></a>
+					<a href='#'><span class="fa fa-linkedin"></span></a>
+				</div>
+			</div>
+
+
+			<div class="center box">
+				<h3>important links</h3>
+				<div class="content">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="#">contribute</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="right box">
+				<h3>Suggestion box</h3>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<input type="email" placeholder="Email" required>
+						</div>
+						<div class="mssg">
+							<textarea rows="2" cols="25" placeholder="Enter Your Suggestion" required></textarea>
+						</div>
+						<div class="send">
+							<button type="submit" class="btn-suggestion">send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+	</footer>
+
+
+
+	<script type="text/javascript" src="mobile.js"></script>
+</body>
+
+</html>
+      
+     
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
