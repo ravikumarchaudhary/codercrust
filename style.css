@@ -448,6 +448,7 @@ wrapper1 {
 }
 .img {
   width: 100%;
+   border: 1px solid black;
 }
 
 .grid-containerarray div a {
