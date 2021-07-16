@@ -381,12 +381,12 @@ wrapper1 {
   margin-left: 250px;
   margin-right: 250px;
   margin-top: 20px;
-  background: #F0EDED;
+  background: white;
   text-align: center;
   font-family: consolas;
   font-weight: bold;
   font-size: 25px;
-  color: blue;
+  color: black;
   text-decoration-line: underline;
 }
 .hloo {
