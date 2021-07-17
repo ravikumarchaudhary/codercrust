@@ -21,12 +21,13 @@
 		p {
 			color: white;
 		}
-		ul{
-		font: 12px "Montserrat", sans-serif;
-		}
+		
 		
 		a:hover{
 		color:green;
+			color: #353333;
+                       font-size: 14px;
+			font-style:italic bold;
 		}
 		
 		#class1 {
@@ -129,39 +130,39 @@
      extracting and moving elements in any position within the container for which an iterator has already been obtained.
      <br>The  drawback of lists and forward_lists compared to these other sequence containers is that they lack direct access to the elements by their position.</p><br><br>
      <p class="def1" id="idhai"><b><u>Methods used in list are </b></u><br>
-     <ul class="def1">
-	     <a href="#"><li>begin()</a> : Returns the iterator pointing to the first element in list.</li>
-		<a href="#"><li>end()</a> : Returns the iterator to the end of the list.</li>
-       <a href="#"><li>rbegin() </a>: Returns the reverse iterator pointing to the last the element. </li>
-       <a href="#"><li>rend()</a> : Returns the reverse iterator pointing to the first element.</li>
-       <a href="#"><li>cbegin() </a>:Returns a constant iterator to begining. </li>
-       <a href="#"><li>cend()</a> : Returns a constant iterator to end.</li>
-       <a href="#"><li>crbegin()</a> : Returns constant reverse iterator to end.</li>
-       <a href="#"><li>crend() </a>: Returns constant reverse iterator to begining.</li>
-       <a href="#"><li>front() </a>: To access the first element.</li>
-       <a href="#"><li>back() </a>: To access the last element</li>
-       <a href="#"><li>empty()</a> : To check whether container is empty.</li>
-       <a href="#"><li>size()</a> : Returns the size.</a></li>
-       <a href="#"><li>max_size()</a> : Returns the maximum size.</li>
-       <a href="#"><li>insert() </a>: Insert the element at a specified position</li>
-       <a href="#"><li>assign() </a>: assigns new element by replacing old.</li>
-       <a href="#"><li>push_front() </a>: Insert element at the beginning .</li>
-       <a href="#"><li>pop_front()</a> : deletes element form front.</li>
-       <a href="#"><li>emplace() </a>: constructs and insert element</li>
-       <a href="#"><li>emplace_front() </a>: constructs and inset element at beginning.</li>
-       <a href="#"><li>push_back()</a> : Insert element at the end</li>
-       <a href="#"><li>pop_front() </a>:Deletes element from front </li>
-       <a href="#"><li>emplace_back()</a> : Construct and insert element at end.</li>
-       <a href="#"><li>erase() </a>: erases element</li>
-       <a href="#"><li>remove() </a>: remove element with specific value</li>
-       <a href="#"><li>clear()</a> : clear the list </li>
-       <a href="#"><li>sort() </a>: sort the list by default ascending</li>
-       <a href="#"><li>merge() </a>: merge the lists</li>
-       <a href="#"><li>swap() </a>: swap content of list</li>
-       <a href="#"><li>splice() </a>: Transfer element from list to list</li>
-       <a href="#"><li>unique() </a>: removes the duplicate values</li>
-       <a href="#"><li>reverse()</a> : reverse the list</li>
-       <a href="#"><li>resize() </a>: change the size</li>
+     <ul>
+	     <a href="#"><li><b>begin()</b></a> : Returns the iterator pointing to the first element in list.</li>
+	     <a href="#"><li>end()</a> : Returns the iterator to the end of the list.</li>
+             <a href="#"><li>rbegin() </a>: Returns the reverse iterator pointing to the last the element. </li>
+             <a href="#"><li>rend()</a> : Returns the reverse iterator pointing to the first element.</li>
+             <a href="#"><li>cbegin() </a>:Returns a constant iterator to begining. </li>
+             <a href="#"><li>cend()</a> : Returns a constant iterator to end.</li>
+             <a href="#"><li>crbegin()</a> : Returns constant reverse iterator to end.</li>
+             <a href="#"><li>crend() </a>: Returns constant reverse iterator to begining.</li>
+             <a href="#"><li>front() </a>: To access the first element.</li>
+             <a href="#"><li>back() </a>: To access the last element</li>
+             <a href="#"><li>empty()</a> : To check whether container is empty.</li>
+             <a href="#"><li>size()</a> : Returns the size.</a></li>
+             <a href="#"><li>max_size()</a> : Returns the maximum size.</li>
+             <a href="#"><li>insert() </a>: Insert the element at a specified position</li>
+             <a href="#"><li>assign() </a>: assigns new element by replacing old.</li>
+             <a href="#"><li>push_front() </a>: Insert element at the beginning .</li>
+             <a href="#"><li>pop_front()</a> : deletes element form front.</li>
+             <a href="#"><li>emplace() </a>: constructs and insert element</li>
+             <a href="#"><li>emplace_front() </a>: constructs and inset element at beginning.</li>
+             <a href="#"><li>push_back()</a> : Insert element at the end</li>
+             <a href="#"><li>pop_front() </a>:Deletes element from front </li>
+             <a href="#"><li>emplace_back()</a> : Construct and insert element at end.</li>
+             <a href="#"><li>erase() </a>: erases element</li>
+             <a href="#"><li>remove() </a>: remove element with specific value</li>
+             <a href="#"><li>clear()</a> : clear the list </li>
+             <a href="#"><li>sort() </a>: sort the list by default ascending</li>
+             <a href="#"><li>merge() </a>: merge the lists</li>
+             <a href="#"><li>swap() </a>: swap content of list</li>
+             <a href="#"><li>splice() </a>: Transfer element from list to list</li>
+             <a href="#"><li>unique() </a>: removes the duplicate values</li>
+             <a href="#"><li>reverse()</a> : reverse the list</li>
+            <a href="#"><li>resize() </a>: change the size</li>
        </ul><br><br>
 		
 		<p class="def1"><b><u>Implementation of list methods</b></u><br><br></p>
@@ -182,8 +183,8 @@
        The  drawback of forward_lists and lists compared to these other sequence containers is that they lack direct access to the elements by their position.
        </p><br><br>
        <p class="def1"><b><u>Methods used in list are </b></u><br>
-     <ul class="def1">
-	     <a href="#" class="def1"><li><b>begin()</b></a> : Returns the iterator pointing to the first element in list.</li>
+     <ul>
+	        <a href="#"><li><b>begin()</b></a> : Returns the iterator pointing to the first element in list.</li>
                 <a href="#"><li>end()</a> : Returns the iterator to the end of the list.</li>
                 <a href="#"><li>before_begin() </a>: Returns the iterator before beginning. </li>
                 <a href="#"><li>cbegin() </a>:Returns a constant iterator to beginning. </li>
@@ -200,7 +201,7 @@
                 <a href="#"><li>emplace_after()</a> : constructs and insert element</li>
                 <a href="#"><li>emplace_front() </a>: constructs and insert element at beginning</li>
       
-       <a href="#"><li>erase_after() </a>: erases element</li>
+               <a href="#"><li>erase_after() </a>: erases element</li>
        <a href="#"><li>remove() </a>: remove element with specific value</li>
        <a href="#"><li>clear() </a>: clear the list </li>
        <a href="#"><li>sort()</a> : sort the list by default ascending</li>
