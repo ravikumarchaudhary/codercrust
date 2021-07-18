@@ -1,1 +1,465 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <title>C++ access specifiers theory mcq's</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+ background: white;
+}
+
+#mcq{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.mcq1 ul li a{
+ color: red;
+}
+
+.first{
+ color: red;
+}
+
+#wholefiile{
+ background: #F0EDED;
+}
+
+</style>
+
+</head>
+    <body> 
+		<header>
+			<img class="logo" alt="logo" src="../../logo.jpeg">
+			<nav>
+				<ul class="nav__links">
+					<li><a href="home.html"> Home</a></li>
+					<li><div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Tutorials</a>                          
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Data Structure</a></li><br>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					  </div></li>
+					<li><a href="practice question.html">Practice</a></li>
+					
+					  <li><div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+							<ul class="dropdown-menu" aria-labelledby="Courses">
+								<li><a class="dropdown-item" href="#">Contest 1</a></li>
+								<li><a class="dropdown-item" href="#">Contest 2</a></li>
+								<li><a class="dropdown-item" href="#">Contest 3</a></li>
+								<li><a class="dropdown-item" href="#">Contest 4</a></li>
+							</ul>
+						  </div></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="rowtable.html">Diamond</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#"><button>Login/Register</button></a>
+			<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+		   -->
+		</header>
+	<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+	</div>
+	<br>
+	<div id="wholefiile" class="wholefile">
+	
+	
+	 <br>	
+	    &nbsp <b>In C++, there are three access specifiers: </b><br>
+		&nbsp <b>public -</b>  members are accessible from outside the class <br>
+		&nbsp <b>private - </b> members cannot be accessed (or viewed) from outside the class <br>
+		&nbsp <b>protected - </b> members cannot be accessed from outside the class, however, they can be accessed in inherited classes. <br>
+
+	   <br> <br>
+	   <p id="mcq"><b>Que1. Which among the following is correct for the code given below?</b><br>
+	   &nbsp class A <br>
+	   &nbsp { <br>
+	     &nbsp &nbsp &nbsp int marks; <br>
+		 &nbsp &nbsp private: <br>
+		 &nbsp &nbsp student(){} <br>
+		 &nbsp &nbsp public: <br>
+		  &nbsp &nbsp student(int x) <br>
+		  &nbsp &nbsp { <br>
+		    &nbsp &nbsp &nbsp marks = x; <br>
+		  &nbsp &nbsp } <br>
+	   &nbsp };<br>
+	   
+	   &nbsp Ans: a. The object can never be created<br>
+       &nbsp &nbsp &nbsp &nbsp b. The object can be created without parameters <br>
+       &nbsp &nbsp &nbsp &nbsp c. Only the object with only 1 parameter can be created<br>
+       &nbsp &nbsp &nbsp &nbsp d. Only the object with some parameters can be created<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) Only the object with only 1 parameter can be created</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+       </p>			
+    <br><br>
+
+    <p id="mcq"><b>Que2. Which among the following is true for the code given below?</b><br>
+	   
+	   &nbsp class A <br>
+	   &nbsp { <br>
+	     &nbsp &nbsp private: <br>
+		 &nbsp &nbsp &nbsp int marks; <br>
+		 &nbsp &nbsp &nbsp char name[20]; <br>
+		 &nbsp &nbsp public: <br>
+		 &nbsp &nbsp A(int x=100) <br>
+		 &nbsp &nbsp { <br>
+		   &nbsp &nbsp &nbsp marks = x; <br>
+		 &nbsp &nbsp} <br>
+	   &nbsp }; <br>
+	   
+	   Ans: a. Objects can be created with one parameter or without parameter<br>
+       &nbsp &nbsp &nbsp &nbsp b. Object can be created only with one parameter<br>
+       &nbsp &nbsp &nbsp &nbsp c. Object can be created with more than one parameter<br>
+       &nbsp &nbsp &nbsp &nbsp d. Objects can be create only without parameter<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) Objects can be created with one parameter or without parameter</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+    <br><br>
+
+    <p id="mcq"><b>Que3. How to access private function fun() outside the class?</b><br>
+	
+	   &nbsp class A <br>
+	   &nbsp{ <br>
+	   &nbsp &nbsp private: <br>
+	   &nbsp &nbsp &nbsp int marks; <br>
+		&nbsp &nbsp &nbsp char name[20]; <br>
+	   &nbsp }; <br>
+	   Ans: a. Specifier must be changed<br>
+       &nbsp &nbsp &nbsp &nbsp b. Friend function should be used<br>
+       &nbsp &nbsp &nbsp &nbsp c. Other public members should be used<br>
+       &nbsp &nbsp &nbsp &nbsp d. It is not possible<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Friend function should be used</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+    	
+	   
+	   <p id="mcq"><b>Que4. What is false about this code?</b><br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp using namespace std; <br>
+	   &nbsp &nbsp class A <br>
+	   &nbsp &nbsp{ <br>
+	    &nbsp &nbsp private:<br>
+		 &nbsp &nbsp int sum(int x, int y) <br>
+		 &nbsp &nbsp {<br>
+		   &nbsp &nbsp &nbsp return x+y; <br>
+		 &nbsp &nbsp } <br>
+		&nbsp &nbsp public: <br>
+         &nbsp &nbsp A(){}	<br>
+        &nbsp &nbsp A(int x, int y) <br>
+		&nbsp &nbsp { <br>
+		 &nbsp &nbsp &nbsp cout<< sum(x,y); &nbsp <br>
+		&nbsp &nbsp }	<br>	 
+	   &nbsp &nbsp }; <br>
+	   &nbsp &nbsp int main() <br>
+	   &nbsp &nbsp { <br>
+	     &nbsp &nbsp &nbsp A obj(3.4,6.7); <br>
+	   &nbsp &nbsp} <br>
+	   
+	   &nbsp Ans: a. Constructor can be created with zero argument<br>
+       &nbsp &nbsp &nbsp &nbsp b. Constructor prints sum, if two parameters are passed with object creation<br>
+       &nbsp &nbsp &nbsp &nbsp c. Constructor will give error if float values are passed<br>
+       &nbsp &nbsp &nbsp &nbsp d. Constructor will take 0 as default value of parameters if not passed<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) Constructor will take 0 as default value of parameters if not passed</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+	   <p id="mcq"><b>Que5. Why this code raised error?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp &nbsp class A <br>
+	   &nbsp &nbsp { <br>
+	      &nbsp &nbsp private: int c; <br>
+		 &nbsp &nbsp public: int a; <br>
+		 &nbsp &nbsp public: int k; <br>
+		 &nbsp &nbsp public:  <br>
+		&nbsp &nbsp A() <br>
+		 &nbsp &nbsp { <br>
+		 &nbsp &nbsp &nbsp c = 20, a = 10, k = 30; <br>
+		  &nbsp &nbsp &nbsp cout<< c<< " "; &nbsp <br>
+		 &nbsp &nbsp } <br>
+	   &nbsp &nbsp }; <br>
+	   &nbsp &nbsp class B:  <br>
+	   &nbsp &nbsp private A <br>
+	   &nbsp &nbsp { <br>
+	    &nbsp &nbsp public: <br>
+          &nbsp &nbsp &nbsp B():A(){}	<br>	 
+	   &nbsp &nbsp }; <br>
+	   &nbsp &nbsp int main() <br>
+	   &nbsp &nbsp { <br>
+	    &nbsp &nbsp &nbsp B obj; <br>
+		&nbsp &nbsp &nbsp cout<< obj.a<< " "<< obj.k; &nbsp <br>
+	   &nbsp &nbsp } <br>
+	   Ans: a. Because c is declared as private in Base class A<br>
+       &nbsp &nbsp &nbsp &nbsp b. Because mode of inheritance is private<br>
+       &nbsp &nbsp &nbsp &nbsp c. Accessing of a and and k from main method is not allowed. Because of a and k is private in Derived class<br>
+       &nbsp &nbsp &nbsp &nbsp d. No error. It will produce an output as 20  10  30   <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) Accessing of a and and k from main method is not allowed. Because of a and k is private in Derived class
+</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+		
+		<p id="mcq"><b>Que6. Identify the correct statement?</b><br>
+		&nbsp using namespace std;<br>
+		&nbsp#include< bits/stdc++.h><br>
+		&nbsp &nbsp class A<br>
+		&nbsp &nbsp {<br>
+		  &nbsp &nbsp &nbsp protected:<br>
+		   &nbsp &nbsp &nbsp &nbsp int c;<br>
+		  &nbsp &nbsp &nbsp A()<br>
+		  &nbsp &nbsp &nbsp {<br>
+		    &nbsp &nbsp &nbsp &nbsp c = 67;<br>
+		  &nbsp &nbsp &nbsp}<br>
+		&nbsp &nbsp };<br>
+		&nbsp &nbsp class B:private A<br>
+		&nbsp &nbsp {<br>
+		  &nbsp &nbsp &nbsp public:<br>
+		   &nbsp &nbsp &nbsp &nbsp int c;<br>
+		   &nbsp &nbsp B():A()<br>
+		   &nbsp &nbsp {<br>
+		     &nbsp &nbsp &nbsp &nbsp c = 90;<br>
+		    &nbsp &nbsp }<br>
+		&nbsp };<br>
+		&nbsp int main()<br>
+		&nbsp {<br>
+		  &nbsp &nbsp B obj;<br>
+		  &nbsp &nbsp cout<< obj.c; &nbsp <br>
+		&nbsp }<br>
+	   Ans: a. It will raised a compile time error, because c is private in A<br>
+       &nbsp &nbsp &nbsp &nbsp b. It will raised a compile time error, because c is redefined in B  <br>
+       &nbsp &nbsp &nbsp &nbsp c. No compile time error, because c is public in B. And accessing c from main is legal and display 67<br>
+       &nbsp &nbsp &nbsp &nbsp d. No compile time error, because c is public in B for redefinition. And accessing c from main is legal and display 90.<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) No compile time error, because c is public in B for redefinition. And accessing c from main is legal and display 90.</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+	   <p id="mcq"><b>Que7. Identify the legal statements?</b><br>
+	   &nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp struct A <br>
+		&nbsp { <br>
+		  &nbsp &nbsp &nbsp int a; <br>
+		  &nbsp &nbsp A() <br>
+		  &nbsp &nbsp { <br>
+		    &nbsp &nbsp &nbsp a = 23; <br>
+		  &nbsp &nbsp } <br>
+		&nbsp }; <br>
+	    &nbsp struct B:A <br>
+		&nbsp { <br>
+		  &nbsp &nbsp B():A() <br>
+		  &nbsp &nbsp { <br>
+		   &nbsp &nbsp &nbsp a = 45; <br>
+		  &nbsp &nbsp } <br>
+		&nbsp }; <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+		  &nbsp &nbsp A obj1; <br>
+		  &nbsp &nbsp B obj2; <br>
+		  &nbsp &nbsp cout<< obj1.a; <br>
+		  &nbsp &nbsp cout<< obj2.a; <br>
+		  &nbsp &nbsp cout<< obj2.A::a; <br>
+		&nbsp } <br>
+	   
+	   Ans: a. only line1 <br>
+       &nbsp &nbsp &nbsp &nbsp b. only line1 and line2<br>
+       &nbsp &nbsp &nbsp &nbsp c. only line2 and line3<br>
+       &nbsp &nbsp &nbsp &nbsp d. All are correct<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) only line1</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+		
+        <br>
+		 <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">Only line1 is a legal statement. Accessing a at line2 and line3 using the object of B is illegal, because A is inherited to B in private mode.    </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>
+        </p>			
+        <br><br> 
+
+       <!-- 
+	   <p id="mcq"><b>Que.</b><br>
+	   Ans: a. <br>
+       &nbsp &nbsp &nbsp &nbsp b. <br>
+       &nbsp &nbsp &nbsp &nbsp c. <br>
+       &nbsp &nbsp &nbsp &nbsp d. <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+		
+        <br>
+		 <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"></a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>
+        </p>			
+        <br><br> -->
+
+
+		
+	
+	
+	
+    </div>
+	
+  <script type="text/javascript" src="../../mobile.js"></script>   
+    </body>	
+</html>
