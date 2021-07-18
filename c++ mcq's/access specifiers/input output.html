@@ -1,1 +1,590 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <title>C++ access specifiers input output mcq's</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+ background: white;
+}
+
+#mcq{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.mcq1 ul li a{
+ color: red;
+}
+
+.first{
+ color: red;
+}
+
+#wholefiile{
+ background: #F0EDED;
+}
+
+</style>
+
+</head>
+    <body> 
+		<header>
+			<img class="logo" alt="logo" src="../../logo.jpeg">
+			<nav>
+				<ul class="nav__links">
+					<li><a href="home.html"> Home</a></li>
+					<li><div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Tutorials</a>                          
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Data Structure</a></li><br>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					  </div></li>
+					<li><a href="practice question.html">Practice</a></li>
+					
+					  <li><div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+							<ul class="dropdown-menu" aria-labelledby="Courses">
+								<li><a class="dropdown-item" href="#">Contest 1</a></li>
+								<li><a class="dropdown-item" href="#">Contest 2</a></li>
+								<li><a class="dropdown-item" href="#">Contest 3</a></li>
+								<li><a class="dropdown-item" href="#">Contest 4</a></li>
+							</ul>
+						  </div></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="rowtable.html">Diamond</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#"><button>Login/Register</button></a>
+			<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+		   -->
+		</header>
+	<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+	</div>
+	<br>
+	<div id="wholefiile" class="wholefile">
+	
+	
+	 <br>	
+	    &nbsp <b>In C++, there are three access specifiers: </b><br>
+		&nbsp <b>public -</b>  members are accessible from outside the class <br>
+		&nbsp <b>private - </b> members cannot be accessed (or viewed) from outside the class <br>
+		&nbsp <b>protected - </b> members cannot be accessed from outside the class, however, they can be accessed in inherited classes. <br>
+ 
+		<br> <br>
+	   <p id="mcq"><b>Que1. What is the output of the code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp &nbsp class A <br>
+	   &nbsp &nbsp { <br>
+	     &nbsp &nbsp &nbsp int a; <br>
+		 &nbsp &nbsp public: <br>
+		   &nbsp &nbsp int *ptr; <br>
+		 &nbsp &nbsp A() <br>
+		 &nbsp &nbsp { <br>
+		   &nbsp &nbsp &nbsp ptr = &a; <br>
+		   &nbsp &nbsp &nbsp a = 90; <br>
+		 &nbsp &nbsp } <br>
+		 &nbsp &nbsp ~A() <br>
+		 &nbsp &nbsp { <br>
+		   &nbsp &nbsp &nbsp cout<< a; &nbsp <br>
+		 &nbsp &nbsp } <br>
+	   &nbsp &nbsp };<br>
+	   
+	   &nbsp &nbsp int main() <br>
+	   &nbsp &nbsp { <br>
+	     &nbsp &nbsp &nbsp A obj; <br
+		 &nbsp &nbsp &nbsp *obj.ptr = 34; <br>
+	   &nbsp &nbsp } <br>
+	   
+	   &nbsp Ans: a. 90<br>
+       &nbsp &nbsp &nbsp &nbsp b. 34<br>
+       &nbsp &nbsp &nbsp &nbsp c. compile time error: a is derived as private<br>
+       &nbsp &nbsp &nbsp &nbsp d. run time error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) 34</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+		
+		<p id="mcq"><b>Que2. What is the output of the code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp &nbsp class A <br>
+	   &nbsp &nbsp{ <br>
+	     &nbsp &nbsp private: <br>
+		 &nbsp &nbsp A()<br>
+		 &nbsp &nbsp { <br>
+		   &nbsp &nbsp cout<< "From A()\n"; &nbsp <br>
+		 &nbsp &nbsp } <br>
+		 &nbsp &nbsp protected: <br>
+		 &nbsp &nbsp A(int a) <br>
+		 &nbsp &nbsp { <br>
+		   &nbsp &nbsp &nbsp cout<< "From A(int a) \n"; &nbsp <br>
+		 &nbsp &nbsp } <br>
+	   &nbsp }; <br>
+	   &nbsp &nbsp class B: private A <br>
+	   &nbsp &nbsp { <br>
+	    &nbsp &nbsp &nbsp const int k = 6; <br>
+		&nbsp &nbsp public: <br>
+		 &nbsp &nbsp B():A(this->k) <br>
+		 &nbsp &nbsp { <br>
+		  &nbsp &nbsp &nbsp cout<< "From B()\n"; &nbsp <br>
+		 &nbsp &nbsp } <br>
+	   &nbsp &nbsp }; <br>
+	   
+	   &nbsp int main() <br>
+	   &nbsp &nbsp { <br>
+	     &nbsp &nbsp &nbsp B obj; <br>
+	   &nbsp &nbsp } <br>
+	   
+	   Ans: a. From A() <br>
+    &nbsp &nbsp &nbsp &nbsp &nbsp From A(int a) <br>
+    &nbsp &nbsp  &nbsp &nbsp &nbsp From B()
+<br>
+       &nbsp &nbsp &nbsp &nbsp b. From B()<br>
+      &nbsp &nbsp &nbsp &nbsp &nbsp From A()
+<br>
+       &nbsp &nbsp &nbsp &nbsp c. From A(int a) <br>
+     &nbsp &nbsp &nbsp &nbsp &nbsp From B()
+<br>
+       &nbsp &nbsp &nbsp &nbsp d. Compile Time Error: A's Constructor must be declared as public<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) From A(int a) <br>
+                                    From B()
+</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+		<p id="mcq"><b>Que3. What is the output of the code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp &nbsp class A <br>
+	   &nbsp &nbsp { <br>
+	      &nbsp &nbsp private: int c; <br>
+		 &nbsp &nbsp public: int a; <br>
+		 &nbsp &nbsp public: int k; <br>
+		 &nbsp &nbsp public:  <br>
+		&nbsp &nbsp A() <br>
+		 &nbsp &nbsp { <br>
+		 &nbsp &nbsp &nbsp c = 20, a = 10, k = 30; <br>
+		  &nbsp &nbsp &nbsp cout<< c<< " "; &nbsp <br>
+		 &nbsp &nbsp } <br>
+	   &nbsp &nbsp }; <br>
+	   &nbsp &nbsp class B:  <br>
+	   &nbsp &nbsp private A <br>
+	   &nbsp &nbsp { <br>
+	    &nbsp &nbsp public: <br>
+          &nbsp &nbsp &nbsp B():A(){}	<br>	 
+	   &nbsp &nbsp }; <br>
+	   &nbsp &nbsp int main() <br>
+	   &nbsp &nbsp { <br>
+	    &nbsp &nbsp &nbsp B obj; <br>
+		&nbsp &nbsp &nbsp cout<< obj.a<< " "<< obj.k; &nbsp <br>
+	   &nbsp &nbsp } <br>
+	   Ans: a. 20<br>
+       &nbsp &nbsp &nbsp &nbsp b. error<br>
+       &nbsp &nbsp &nbsp &nbsp c. 30<br>
+       &nbsp &nbsp &nbsp &nbsp d. None<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) error</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+       <p id="mcq"><b>Que4. Identify the correct statement?</b><br>
+		&nbsp using namespace std;<br>
+		&nbsp#include< bits/stdc++.h><br>
+		&nbsp &nbsp class A<br>
+		&nbsp &nbsp {<br>
+		  &nbsp &nbsp &nbsp protected:<br>
+		   &nbsp &nbsp &nbsp &nbsp int c;<br>
+		  &nbsp &nbsp &nbsp A()<br>
+		  &nbsp &nbsp &nbsp {<br>
+		    &nbsp &nbsp &nbsp &nbsp c = 67;<br>
+		  &nbsp &nbsp &nbsp}<br>
+		&nbsp &nbsp };<br>
+		&nbsp &nbsp class B:private A<br>
+		&nbsp &nbsp {<br>
+		  &nbsp &nbsp &nbsp public:<br>
+		   &nbsp &nbsp &nbsp &nbsp int c;<br>
+		   &nbsp &nbsp B():A()<br>
+		   &nbsp &nbsp {<br>
+		     &nbsp &nbsp &nbsp &nbsp c = 90;<br>
+		    &nbsp &nbsp }<br>
+		&nbsp };<br>
+		&nbsp int main()<br>
+		&nbsp {<br>
+		  &nbsp &nbsp B obj;<br>
+		  &nbsp &nbsp cout<< obj.c; &nbsp <br>
+		&nbsp }<br>
+		
+		Ans: a. 67<br>
+       &nbsp &nbsp &nbsp &nbsp b. 90<br>
+       &nbsp &nbsp &nbsp &nbsp c. compile time error<br>
+       &nbsp &nbsp &nbsp &nbsp d. run time error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) 90</a></li>
+			  </ul>
+			 </li>
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+
+
+       <p id="mcq"><b>Que5. What is the output of the code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp class A <br>
+	   &nbsp { <br>
+	     &nbsp &nbsp &nbsp public: <br>
+		 &nbsp &nbsp &nbsp int c; <br>
+		  &nbsp &nbsp A() <br>
+		  &nbsp &nbsp { <br>
+		    &nbsp &nbsp &nbsp c = 67; <br>
+		  &nbsp &nbsp } <br>
+	   &nbsp }; <br>
+	   &nbsp class B:private A <br>
+	   &nbsp { <br>
+	     &nbsp &nbsp &nbsp public: <br>
+		  &nbsp &nbsp &nbsp &nbsp int c; <br>
+		  &nbsp &nbsp &nbsp B():A() <br>
+		  &nbsp &nbsp &nbsp { <br>
+		    &nbsp &nbsp &nbsp &nbsp c = 90; <br>
+		   &nbsp &nbsp } <br>
+	   &nbsp }; <br>
+	   &nbsp int main() <br>
+	   &nbsp { <br>
+	     &nbsp &nbsp &nbsp B obj; <br>
+		 &nbsp &nbsp &nbsp cout<< obj.A::c; &nbsp <br>
+	   &nbsp } <br>
+	   Ans: a. 67<br>
+       &nbsp &nbsp &nbsp &nbsp b. 90<br>
+       &nbsp &nbsp &nbsp &nbsp c. compile timr error: Because two copies of C present in B<br>
+       &nbsp &nbsp &nbsp &nbsp d. Compile timr error: Because A is inaccessible base of B<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) Compile timr error: Because A is inaccessible base of B</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        </p>			
+        <br><br>
+		
+		
+	   <p id="mcq"><b>Que6. What is the output of the code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp class access <br>
+	   &nbsp { <br>
+	        &nbsp &nbsp &nbsp int a = 10; <br>
+			&nbsp &nbsp	void disp() <br>
+			&nbsp &nbsp	{ <br>
+				  &nbsp &nbsp &nbsp cout<< "a: "<< a; &nbsp <br>
+				&nbsp &nbsp } <br>
+	   &nbsp }; <br>
+	   
+	   &nbsp int main() <br>
+	   &nbsp {<br>
+	     &nbsp &nbsp access a; <br>
+		 &nbsp &nbsp a.disp(); <br>
+		 &nbsp &nbsp return 0; <br>
+	   &nbsp } <br>
+	   Ans: a. a: 10<br>
+       &nbsp &nbsp &nbsp &nbsp b. a: 20<br>
+       &nbsp &nbsp &nbsp &nbsp c. Runtime error<br>
+       &nbsp &nbsp &nbsp &nbsp d. Compile time error: Because disp() is private<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) Complile time error: Because disp() is private</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+		
+		<br>
+		 <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">Explanation: When the access specifiers are not specified then they are taken as private by default. The private members of a class can be accessed only with in the class and can not be accessed using . operator outside of a class.</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>
+        </p>			
+        <br><br>
+		
+		<p id="mcq"><b>Que7. What it the output of the code?</b><br>
+		&nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp struct A <br>
+		&nbsp { <br>
+		  &nbsp &nbsp &nbsp int a; <br>
+		  &nbsp &nbsp A() <br>
+		  &nbsp &nbsp { <br>
+		    &nbsp &nbsp &nbsp a = 23; <br>
+		  &nbsp &nbsp } <br>
+		&nbsp }; <br>
+	    &nbsp struct B:A <br>
+		&nbsp { <br>
+		  &nbsp &nbsp B():A() <br>
+		  &nbsp &nbsp { <br>
+		   &nbsp &nbsp &nbsp a = 45; <br>
+		  &nbsp &nbsp } <br>
+		&nbsp }; <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+		  &nbsp &nbsp A obj1; <br>
+		  &nbsp &nbsp B obj2; <br>
+		  &nbsp &nbsp cout<< obj1.a<< " "<< obj2.a<< " "<< obj2.A::a; <br>
+		&nbsp } <br>
+	   Ans: a. 23 23 45<br>
+       &nbsp &nbsp &nbsp &nbsp b. 45 45 45<br>
+       &nbsp &nbsp &nbsp &nbsp c. 23 45 45<br>
+       &nbsp &nbsp &nbsp &nbsp d. compile time error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) 23 45 45</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+		
+        <br>
+		 <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">No compile time error. Because in structure the default access specifier is public. When we inherit a structure from another structure the default mode of inheritance is public. So a of class A is remains public in struct B. So accessing data member of structure outside of the structure is legal. Obj1.a and obj2.a prints their respective copies a as 23 and 45. At last obj2.A::a prints base copy of a as part of the derived. So prints 45   </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>
+        </p>			
+        <br><br>
+		
+		
+	   <p id="mcq"><b>Que8. What is the output of the code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.> <br>
+	   &nbsp class Test <br>
+	   &nbsp { <br>
+	          &nbsp &nbsp private: <br>
+			&nbsp &nbsp &nbsp int data; <br>
+		    &nbsp &nbsp public: <br>
+			&nbsp &nbsp Test(){ data = 0;} <br>
+			&nbsp &nbsp int getData(){return  data;} <br>
+	   &nbsp }; <br>
+	   &nbsp int main() <br>
+	   &nbsp { <br>
+	        &nbsp &nbsp Test t; <br>
+			 &nbsp &nbsp int *ptr = (int*)&t; <br>
+			 &nbsp &nbsp *ptr = 10; <br>
+			 &nbsp &nbsp cout<< t.getData(); <br>
+			 &nbsp &nbsp return 0; <br>
+	   &nbsp } <br>
+	   Ans: a. 10<br>
+       &nbsp &nbsp &nbsp &nbsp b. 0<br>
+       &nbsp &nbsp &nbsp &nbsp c. Compile Time Error: Because typecasting the address of an object to int pointer is illegal<br>
+       &nbsp &nbsp &nbsp &nbsp d. Accessing private data using pointer is not allowed<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) 10</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+		
+        <br>
+		 <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">Accessing private data using pointer is possible. After typecasting address of member data is assigned to pointer ptr. In next line value at ptr is changed to 10. So, t.getData() prints the value of member data as 10.</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>
+        </p>			
+        <br><br>
+		
+       
+       <!-- 
+	   <p id="mcq"><b>Que.</b><br>
+	   Ans: a. <br>
+       &nbsp &nbsp &nbsp &nbsp b. <br>
+       &nbsp &nbsp &nbsp &nbsp c. <br>
+       &nbsp &nbsp &nbsp &nbsp d. <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+		
+        <br>
+		 <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"></a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>
+        </p>			
+        <br><br> -->
+
+
+		
+	
+	
+	
+    </div>
+
+	 
+	
+  <script type="text/javascript" src="../../mobile.js"></script>   
+    </body>	
+</html>
