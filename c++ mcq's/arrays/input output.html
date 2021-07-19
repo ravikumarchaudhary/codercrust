@@ -1,1 +1,860 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <title>C++ Array input output mcq's</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+ background: white;
+}
+
+#mcq{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.mcq1 ul li a{
+ color: red;
+}
+
+.first{
+ color: red;
+}
+
+#wholefiile{
+ background: #F0EDED;
+}
+
+</style>
+
+</head>
+    <body> 
+		<header>
+			<img class="logo" alt="logo" src="../../logo.jpeg">
+			<nav>
+				<ul class="nav__links">
+					<li><a href="FrontPage.html"> Home</a></li>
+					<!--<li><a href="FrontPage.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li> -->
+					<li><div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false"> Courses</a>                          
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Data Structure</a></li><br>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					  </div></li>
+					<!-- <li><a href="TodoList/index.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li> -->
+					<li><a href="TodoList/index.html"> Practice</a></li>
+					
+					  <li><div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+							<ul class="dropdown-menu" aria-labelledby="Courses">
+								<li><a class="dropdown-item" href="#">Contest 1</a></li>
+								<li><a class="dropdown-item" href="#">Contest 2</a></li>
+								<li><a class="dropdown-item" href="#">Contest 3</a></li>
+								<li><a class="dropdown-item" href="#">Contest 4</a></li>
+							</ul>
+						  </div></li>
+					<li><a href="#"> About Us</a></li>
+					<li><a href="#"> Contact</a></li>
+					<li><a href="rowtable.html">Diamond</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#"><button>Login/Register</button></a>
+			<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+		   -->
+		</header>
+	<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+	</div>
+	<br>
+	<div id="wholefiile" class="wholefile">
+	 
+	   <p id="mcq"><b>Que1. What will be the output of the following code?</b><br>
+	    &nbsp #include< iostream><br>
+		&nbsp using namespace std; <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp int arr[] = {1,2,3,4,5,6}; <br>
+			&nbsp &nbsp int n = sizeof(arr)/sizeof(arr[0]); <br>
+			&nbsp &nbsp int d=4; <br>
+			&nbsp &nbsp int temp[10]; <br>
+		 
+			&nbsp &nbsp for(int i=0;i< d;i++) <br> 
+			&nbsp &nbsp &nbsp temp[i]=arr[i]; <br>
+		 
+			&nbsp &nbsp int j=0; <br>
+			&nbsp &nbsp for(int i=d;i< n;i++,j++) <br> 
+			 &nbsp &nbsp &nbsp arr[j]=arr[i]; <br>
+		 
+			&nbsp &nbsp int k=0; <br>
+			&nbsp &nbsp for(int i=n-d;i< n;i++,k++) <br>
+			&nbsp &nbsp &nbsp arr[i]=temp[k]; <br>
+		 
+			&nbsp &nbsp for(int i=0;i< n;i++) <br> 
+			&nbsp &nbsp cout<< arr[i]<< " "; <br> 
+			&nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+
+	    Ans: a. 5 6 1 2 3 4<br>
+       &nbsp &nbsp &nbsp &nbsp b. 6 5 4 3 1 2<br>
+       &nbsp &nbsp &nbsp &nbsp c. 3 4 5 6 1 2<br>
+       &nbsp &nbsp &nbsp &nbsp d. error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) 5 6 1 2 3 4</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+		<br>
+		<p id="mcq"><b>Que2. What will be the output of the following program?</b><br>
+		&nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp int main() <br>
+		&nbsp {<br>
+		         &nbsp &nbsp int a[5] = {5,1,15,20,25}; <br>
+				 &nbsp &nbsp int i,j,m; <br>
+				 &nbsp &nbsp i = ++a[1]; <br>
+				 &nbsp &nbsp j = a[1]++; <br>
+				 &nbsp &nbsp m = a[i++]; <br>
+				 &nbsp &nbsp cout<< i << j << m; <br>
+		&nbsp } <br>
+	   Ans: a. 3 2 15<br>
+       &nbsp &nbsp &nbsp &nbsp b. 2 3 20<br>
+       &nbsp &nbsp &nbsp &nbsp c. 2 1 15<br>
+       &nbsp &nbsp &nbsp &nbsp d. 1 2 5<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) 3 2 15</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+	   <p id="mcq"><b>Que3. What will be the output of the following code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp int main() <br>
+	   &nbsp { <br>
+	     &nbsp &nbsp &nbsp char str1[] = "abcd"; <br>
+		 &nbsp &nbsp &nbsp char str2[] = "abcd"; <br>
+		 
+		 &nbsp &nbsp &nbsp if(str1 == str2) <br>
+		 &nbsp &nbsp &nbsp &nbsp cout<< "Equal"; <br>
+		 &nbsp &nbsp &nbsp else <br>
+         &nbsp &nbsp &nbsp &nbsp cout<< "Unequal"; <br>
+		&nbsp &nbsp &nbsp return 0; <br>
+	   &nbsp } <br>
+	   Ans: a. Equal<br>
+       &nbsp &nbsp &nbsp &nbsp b. Unequal<br>
+       &nbsp &nbsp &nbsp &nbsp c. Error<br>
+       &nbsp &nbsp &nbsp &nbsp d. None of these<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Unequal</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		
+		<p id="mcq"><b>Que4. What will be the output of the following code?</b><br>
+	   &nbsp using namespace std; <br>
+	   &nbsp #include< bits/stdc++.h> <br>
+	   &nbsp int main() <br>
+	   &nbsp { <br>
+	     &nbsp &nbsp &nbsp string str1 = "abcd"; <br>
+		 &nbsp &nbsp &nbsp string str2 = "abcd"; <br>
+		 
+		 &nbsp &nbsp &nbsp if(str1 == str2) <br>
+		 &nbsp &nbsp &nbsp &nbsp cout<< "Equal"; <br>
+		 &nbsp &nbsp &nbsp else <br>
+         &nbsp &nbsp &nbsp &nbsp cout<< "Unequal"; <br>
+		&nbsp &nbsp &nbsp return 0; <br>
+	   &nbsp } <br>
+	   Ans: a. Equal<br>
+       &nbsp &nbsp &nbsp &nbsp b. Unequal<br>
+       &nbsp &nbsp &nbsp &nbsp c. Error<br>
+       &nbsp &nbsp &nbsp &nbsp d. None of these<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) Equal</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		
+		<p id="mcq"><b>Que5. What is the output of C program?</b><br>
+		&nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+		  &nbsp &nbsp &nbsp char grade[] = {'A','B','C'}; <br>
+		  &nbsp &nbsp &nbsp printf("GRADE=%d", "*grade"); <br>
+		  &nbsp &nbsp &nbsp printf("GRADE=%d", "*grade[0]"); <br>
+		&nbsp } <br>
+	   Ans: a. A A<br>
+       &nbsp &nbsp &nbsp &nbsp b. 65 A<br>
+       &nbsp &nbsp &nbsp &nbsp c. 65 65<br>
+       &nbsp &nbsp &nbsp &nbsp d. None of the above<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) 65 65</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que6. What is the output of C program?</b><br>
+		
+		&nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		
+		&nbsp int main()  <br>
+		&nbsp { <br>
+		 &nbsp &nbsp &nbsp float marks[3] = {90.5, 92.5, 96.5};  <br>
+		 &nbsp &nbsp &nbsp int a=0;  <br>
+		 &nbsp &nbsp while(a<3)  <br>
+		 &nbsp &nbsp {  <br>
+		 &nbsp &nbsp &nbsp printf("%.2f,", marks[a]); <br>
+		 &nbsp &nbsp &nbsp a++; <br>
+		 &nbsp &nbsp }  <br>
+		&nbsp } <br>
+
+		
+	   Ans: a. 90.5 92.5 96.5 <br>
+       &nbsp &nbsp &nbsp &nbsp b. 90.50 92.50 96.50<br>
+       &nbsp &nbsp &nbsp &nbsp c. 0.00 0.00 0.00 <br>
+       &nbsp &nbsp &nbsp &nbsp d. Compiler error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) 90.50 92.50 96.50</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que7. What will be the output of the program?</b><br>
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp void fun(int **p); <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+		 &nbsp &nbsp &nbsp int a[3][4] = {1, 2, 3, 4, 4, 3, 2, 8, 7, 8, 9, 0}; <br>
+		 &nbsp &nbsp &nbsp int *ptr; ptr = &a[0][0]; <br>
+		 &nbsp &nbsp fun(&ptr); <br>
+		 &nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+
+		&nbsp void fun(int **p) <br>
+		&nbsp { <br>
+		 &nbsp &nbsp cout<< **p; <br>
+		&nbsp } <br>
+
+	   Ans: a. 1<br>
+       &nbsp &nbsp &nbsp &nbsp b. 2<br>
+       &nbsp &nbsp &nbsp &nbsp c. 3<br>
+       &nbsp &nbsp &nbsp &nbsp d. 4<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br>
+		
+		
+		<p id="mcq"><b>Que8. What is the output of the following piece of code?</b><br>
+		
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp using namespace std; <br>
+
+		&nbsp void fun(int arr[], int n, int k) <br>
+		&nbsp { <br>
+		&nbsp &nbsp &nbsp int mod = k % n; <br>
+		&nbsp &nbsp for (int i = 0; i < n; i++) <br>
+		&nbsp &nbsp &nbsp cout << (arr[(mod + i) % n]) << " "; <br>
+		
+		&nbsp &nbsp cout << "\n"; <br>
+		&nbsp } <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+		&nbsp &nbsp int arr[] = { 1, 3, 5, 7, 9 }; <br>
+		&nbsp &nbsp int n = sizeof(arr) / sizeof(arr[0]); <br>
+		&nbsp &nbsp int k = 2; <br>
+		 &nbsp &nbsp fun(arr, n, k); <br>
+		&nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+
+
+	   Ans: a. 1 3 5 7 9 <br>
+       &nbsp &nbsp &nbsp &nbsp b. 5 7 9 1 3  <br>
+       &nbsp &nbsp &nbsp &nbsp c. 7 9 5 1 3  <br>
+       &nbsp &nbsp &nbsp &nbsp d. 5 7 9 3 1  <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br>
+		
+		<p id="mcq"><b>Que9. What is the output of the following piece of code?</b><br>
+		 &nbsp using namespace std; <br>
+		 &nbsp #include< bits/stdc++.h> <br>
+		 &nbsp int main() <br>
+		  &nbsp { <br>
+		  &nbsp &nbsp &nbsp int a[] = {-1, 2, 3, 4, -1}; <br>
+		  &nbsp &nbsp &nbsp int n = sizeof(a) / sizeof(a[0]); <br>
+		  &nbsp &nbsp &nbsp int t[n]; <br>
+		   &nbsp &nbsp for(int i = 0; i < n; i++) <br>
+			&nbsp &nbsp &nbsp &nbsp t[i] = -1; <br>
+		  &nbsp &nbsp for(int i = 0; i < n; i++) <br>
+			&nbsp &nbsp &nbsp if(a[i] != -1) <br>
+			  &nbsp &nbsp &nbsp t[a[i]] = a[i]; <br>
+		  &nbsp &nbsp for(int i = 0; i < n; i++) <br>
+			&nbsp &nbsp &nbsp cout<< t[i]<<" "; <br>
+		  &nbsp &nbsp &nbsp cout<< endl; <br> 
+		&nbsp } <br>
+
+		
+	   Ans: a. {-1, 3, 4, -1, 2}<br>
+       &nbsp &nbsp &nbsp &nbsp b. {-1, 4, 3, -1, 2}<br>
+       &nbsp &nbsp &nbsp &nbsp c. {-1, -1, 2, 3, 4}<br>
+       &nbsp &nbsp &nbsp &nbsp d. {-1, -1, 4, 3, 2} <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) {-1, -1, 2, 3, 4}</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br>
+		
+		<p id="mcq"><b>Que10. What will be the output of the program?</b><br>
+		&nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+		  &nbsp &nbsp int arr[1] = 10; <br>
+		  &nbsp &nbsp cout<< 0[arr]; <br>
+		  &nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+	   Ans: a. 1<br>
+       &nbsp &nbsp &nbsp &nbsp b. 10<br>
+       &nbsp &nbsp &nbsp &nbsp c. 0<br>
+       &nbsp &nbsp &nbsp &nbsp d. 6<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) 10</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br>
+		 
+		 
+		
+
+
+
+      <p id="mcq"><b>Que11. Predict output of following program?</b><br>
+	    &nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+	    &nbsp int main()
+		&nbsp {
+			&nbsp &nbsp &nbsp int i;
+			&nbsp &nbsp &nbsp int arr[5] = {1};
+			&nbsp &nbsp for (i = 0; i < 5; i++) <br>
+			&nbsp &nbsp &nbsp cout<< arr[i]; <br>
+			&nbsp return 0; <br
+		&nbsp }<br>
+	   
+	   Ans: a. 1 followed by four garbage values<br>
+       &nbsp &nbsp &nbsp &nbsp b. 1 0 0 0 0 <br>
+       &nbsp &nbsp &nbsp &nbsp c. 1 1 1 1 1<br>
+       &nbsp &nbsp &nbsp &nbsp d. 0 0 0 0 0<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) 1 0 0 0 0</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que12. Predict output of following program?</b><br>
+		 &nbsp using namespace std; <br>
+		 &nbsp #include< bits/stdc++.h><br>
+		 &nbsp int main() <br>
+		 &nbsp { <br>
+		  &nbsp &nbsp &nbsp int a[][]={{1,2},{3,4}}; <br>
+		  &nbsp &nbsp &nbsp int i,j; <br>
+		   &nbsp &nbsp for(int i = 0; i < 2; i++) <br>
+		  &nbsp &nbsp { <br>
+		   &nbsp &nbsp for(int j = 0; j < 2; j++) <br>
+		   &nbsp &nbsp { <br>
+		     &nbsp &nbsp &nbsp cout<< a[i][j]; <br>
+		   &nbsp &nbsp } <br>
+		  &nbsp &nbsp } <br>
+		  &nbsp &nbsp &nbsp return 0; <br>
+		 &nbsp } <br>
+	   Ans: a. 1 2 3 4<br>
+       &nbsp &nbsp &nbsp &nbsp b. Compiler error in line: int a[][]={{1,2},{3,4}};<br>
+       &nbsp &nbsp &nbsp &nbsp c. 4 garbage values<br>
+       &nbsp &nbsp &nbsp &nbsp d. 4 3 2 1<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Compiler error in line: int a[][]={{1,2},{3,4}};</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que13. Find out the correct statement for the following program.</b><br>
+		&nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp int *arrPtr[5]; <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+		  &nbsp &nbsp if(*(arrPtr+2) == *(arrPtr+4)) <br>
+		  &nbsp &nbsp { <br>
+		    &nbsp &nbsp &nbsp cout<< "Equal"; <br>
+		  &nbsp &nbsp } <br>
+		   &nbsp &nbsp else <br>
+		  &nbsp &nbsp { <br>
+		    &nbsp &nbsp &nbsp cout<< "Not equal"; <br>
+		  &nbsp &nbsp } <br>
+		  &nbsp &nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+	   Ans: a. Compiler error<br>
+       &nbsp &nbsp &nbsp &nbsp b. It will always print Equal<br>
+       &nbsp &nbsp &nbsp &nbsp c. It will always print Not Equal<br>
+       &nbsp &nbsp &nbsp &nbsp d. Since elements of arrPtr are't initialized in the program, it will print either Equal or not Equal<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) It will always print Equal </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que14. What will be the output of the following code?</b><br>
+		&nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp int main() <br>
+        &nbsp { <br>
+			&nbsp &nbsp &nbsp int ary[4] = {1, 2, 3, 4}; <br>
+			&nbsp &nbsp &nbsp int p[4]; <br>
+			&nbsp &nbsp &nbsp p = ary; <br>
+			&nbsp &nbsp &nbsp cout<< p[1]; <br>
+        &nbsp } <br>
+
+	   Ans: a. 1<br>
+       &nbsp &nbsp &nbsp &nbsp b. 2<br>
+       &nbsp &nbsp &nbsp &nbsp c. Compile time error<br>
+       &nbsp &nbsp &nbsp &nbsp d. Run time error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Compile Time error</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br>
+
+		
+       <!-- 
+	   <p id="mcq"><b>Que.</b><br>
+	   Ans: a. <br>
+       &nbsp &nbsp &nbsp &nbsp b. <br>
+       &nbsp &nbsp &nbsp &nbsp c. <br>
+       &nbsp &nbsp &nbsp &nbsp d. <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br> -->
+    </div>
+  <script type="text/javascript" src="mobile.js"></script>   
+    </body>	
+</html>
