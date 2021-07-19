@@ -1,1 +1,402 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../style.css">
+    <title>C++ Array theory mcq's</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+ background: white;
+}
+
+#mcq{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.mcq1 ul li a{
+ color: red;
+}
+
+.first{
+ color: red;
+}
+
+#wholefiile{
+ background: #F0EDED;
+}
+
+</style>
+
+</head>
+    <body> 
+		<header>
+			<img class="logo" alt="logo" src="../../logo.jpeg">
+			<nav>
+				<ul class="nav__links">
+					<li><a href="FrontPage.html"> Home</a></li>
+					<!--<li><a href="FrontPage.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li> -->
+					<li><div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false"> Courses</a>                          
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Data Structure</a></li><br>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					  </div></li>
+					<!-- <li><a href="TodoList/index.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li> -->
+					<li><a href="TodoList/index.html"> Practice</a></li>
+					
+					  <li><div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+							<ul class="dropdown-menu" aria-labelledby="Courses">
+								<li><a class="dropdown-item" href="#">Contest 1</a></li>
+								<li><a class="dropdown-item" href="#">Contest 2</a></li>
+								<li><a class="dropdown-item" href="#">Contest 3</a></li>
+								<li><a class="dropdown-item" href="#">Contest 4</a></li>
+							</ul>
+						  </div></li>
+					<li><a href="#"> About Us</a></li>
+					<li><a href="#"> Contact</a></li>
+					<li><a href="rowtable.html">Diamond</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#"><button>Login/Register</button></a>
+			<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+		   -->
+		</header>
+	<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+	</div>
+	<br>
+	<div id="wholefiile" class="wholefile">
+	   
+	   <p id="mcq"><b>Que1. What will be the resulting array after rotating arr[]={1,2,3,4,5} by 2?</b><br>
+	   Ans: a. {2,1,3,4,5}<br>
+       &nbsp &nbsp &nbsp &nbsp b. {3,4,5,1,2}<br>
+       &nbsp &nbsp &nbsp &nbsp c. {4,5,1,2,3}<br>
+       &nbsp &nbsp &nbsp &nbsp d. {1,2,3,5,4}<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">{3,4,5,1,2}</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que2. Let x be an array. Which of the following operation are illegal?</b><br>
+		 &nbsp &nbsp &nbsp I.   ++x <br>
+		 &nbsp &nbsp &nbsp II.  x + 1 <br>
+		 &nbsp &nbsp &nbsp III. x++ <br>
+		 &nbsp &nbsp &nbsp IV.  x*2 <br>
+		 
+	   Ans: a. I and II<br>
+       &nbsp &nbsp &nbsp &nbsp b. I,II and III<br>
+       &nbsp &nbsp &nbsp &nbsp c. II and III<br>
+       &nbsp &nbsp &nbsp &nbsp d. I,II and IV<br>
+	   &nbsp &nbsp &nbsp &nbsp e. III and IV<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) I,III and IV</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que3. Array passed as an argument to a function is interpreted as:</b><br>
+	   Ans: a. Address of the array<br>
+       &nbsp &nbsp &nbsp &nbsp b. Values of the first element of the array<br>
+       &nbsp &nbsp &nbsp &nbsp c. Address of the first element of the array <br>
+       &nbsp &nbsp &nbsp &nbsp d. Number of element of the array<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) Address of the first element of the array </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>  
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que4. Let A be a square matrix of size n x n. Consider the following program. What is the expected output?</b><br>
+	    
+		&nbsp using namespace std; <br>
+		&nbsp #include< bits/stdc++.h> <br>
+		
+		&nbsp int main() <br>
+		&nbsp { <br>
+		 &nbsp &nbsp C = 100; <br>
+		 &nbsp &nbsp for i = 1 to n do <br>
+		    &nbsp &nbsp &nbsp for j = 1 to n do <br>
+		    &nbsp &nbsp &nbsp { <br>
+		        &nbsp &nbsp &nbsp &nbsp Temp = A[i][j] + C; <br>
+		        &nbsp &nbsp &nbsp &nbsp A[i][j] = A[j][i]; <br>
+		        &nbsp &nbsp &nbsp &nbsp A[j][i] = Temp - C; <br>
+		    &nbsp &nbsp &nbsp } <br>
+		 &nbsp &nbsp for i = 1 to n do <br>
+		    &nbsp &nbsp &nbsp for j = 1 to n do <br>
+		        &nbsp &nbsp &nbsp &nbsp Output(A[i][j]); <br>
+		&nbsp } <br>
+	   
+	   Ans: a. The matrix A itself<br>
+       &nbsp &nbsp &nbsp &nbsp b. Transpose of matrix A<br>
+       &nbsp &nbsp &nbsp &nbsp c. Adding 100 to the upper diagonal elements and subtracting 100 from diagonal elements of A.<br>
+       &nbsp &nbsp &nbsp &nbsp d. None of the above<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) The matrix A itself</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br>
+	   
+	   <p id="mcq"><b>Que5. Which of the following is the correct way to define the function fun() in the program below?</b><br>
+	   &nbsp #include< stdio.h> <br>
+       &nbsp int main() <br>
+	   &nbsp { <br>
+       &nbsp &nbsp int a[3][4]; <br> 
+       &nbsp &nbsp fun(a); <br>
+       &nbsp } <br>
+
+	   Ans: a. void fun(int p[][4]){}<br>
+       &nbsp &nbsp &nbsp &nbsp b. void fun(int *p[][4]){}<br>
+       &nbsp &nbsp &nbsp &nbsp c. void fun(int *p[3][4]);<br>
+       &nbsp &nbsp &nbsp &nbsp d. void fun(int *p[4]){}<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) void fun(int p[][4]){}</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que6. What does the following declaration mean?</b><br>
+		&nbsp int (*ptr)[10]; <br>
+	   Ans: a. ptr is array of pointers to 10 integers <br>
+       &nbsp &nbsp &nbsp &nbsp b. ptr is a pointer to an array of 10 integers <br>
+       &nbsp &nbsp &nbsp &nbsp c. ptr is an array of 10 integers <br>
+       &nbsp &nbsp &nbsp &nbsp d. ptr is an pointer to array<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) ptr is a pointer to an array of 10 integers </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br>
+	 
+		
+       <!-- 
+	   <p id="mcq"><b>Que.</b><br>
+	   Ans: a. <br>
+       &nbsp &nbsp &nbsp &nbsp b. <br>
+       &nbsp &nbsp &nbsp &nbsp c. <br>
+       &nbsp &nbsp &nbsp &nbsp d. <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br> -->
+    </div>
+  <script type="text/javascript" src="mobile.js"></script>   
+    </body>	
+</html>
