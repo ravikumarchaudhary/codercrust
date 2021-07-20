@@ -5,7 +5,8 @@
   padding: 0;
 }
 header {
-  background-color: #24252a;
+  /*background-color: #24252a;*/
+  background-color: black;
 }
 footer {
   width: 100%;
