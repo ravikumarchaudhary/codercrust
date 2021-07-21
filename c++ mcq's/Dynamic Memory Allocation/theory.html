@@ -1,1 +1,661 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>C++ DMA theory mcq's</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+ background: white;
+}
+
+#mcq{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.mcq1 ul li a{
+ color: red;
+}
+
+.first{
+ color: red;
+}
+
+#wholefiile{
+ background: #F0EDED;
+}
+
+</style>
+
+</head>
+    <body> 
+		<header>
+			<img class="logo" alt="logo" src="../../logo.jpeg">
+			<nav>
+				<ul class="nav__links">
+					<li><a href="home.html"> Home</a></li>
+					<!--<li><a href="FrontPage.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li> -->
+					<li><div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false"> Courses</a>                          
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Data Structure</a></li><br>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					  </div></li>
+					<!-- <li><a href="TodoList/index.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li> -->
+					<li><a href="practice questions.html"> Practice</a></li>
+					
+					  <li><div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+							<ul class="dropdown-menu" aria-labelledby="Courses">
+								<li><a class="dropdown-item" href="#">Contest 1</a></li>
+								<li><a class="dropdown-item" href="#">Contest 2</a></li>
+								<li><a class="dropdown-item" href="#">Contest 3</a></li>
+								<li><a class="dropdown-item" href="#">Contest 4</a></li>
+							</ul>
+						  </div></li>
+					<li><a href="#"> About Us</a></li>
+					<li><a href="#"> Contact</a></li>
+					<li><a href="rowtable.html">Diamond</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#"><button>Login/Register</button></a>
+			<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+		   -->
+		</header>
+	<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+	</div>
+	<br>
+	<div id="wholefiile" class="wholefile">
+	
+	   <p id="mcq"><b>Que1. The most appropriate matching for the following pairs</b><br> 
+       &nbsp &nbsp X: m=malloc(5); m= NULL; &nbsp &nbsp &nbsp &nbsp 1: using dangling pointers <br>
+       &nbsp &nbsp Y: free(n); n->value=5;  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  2: using uninitialized pointers <br>
+       &nbsp &nbsp Z: char *p; *p = ’a’;    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 3. lost memory is <br> <br>
+	   Ans: a. X—1 Y—3 Z-2 <br>
+       &nbsp &nbsp &nbsp &nbsp b. X—2 Y—1 Z-3<br>
+       &nbsp &nbsp &nbsp &nbsp c. X—3 Y—2 Z-1<br>
+       &nbsp &nbsp &nbsp &nbsp d. X—3 Y—1 Z-2<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) X—3 Y—1 Z-2</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">X -> A pointer is assigned to NULL without freeing memory so a clear example of memory leak Y -> Trying to retrieve value after freeing it so dangling pointer. Z -> Using uninitialized pointers</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+	   
+	   
+	   <p id="mcq"><b>Que2. Consider the following three functions:</b><br>
+	   
+	    &nbsp [PI] int * g (void) <br>
+		&nbsp {  <br>
+		  &nbsp &nbsp int x= 10;  <br>
+		  &nbsp &nbsp return (&x);  <br>
+		&nbsp }  <br>
+		   
+		&nbsp [P2] int * g (void) <br>
+		&nbsp { <br>
+		  &nbsp &nbsp int * px; <br>
+		  &nbsp &nbsp *px= 10; <br>
+		  &nbsp &nbsp return px; <br>
+		&nbsp } <br>
+        
+		&nbsp [P3] int *g (void) <br>
+		&nbsp { <br>
+		  &nbsp &nbsp int *px; <br>
+		  &nbsp &nbsp px = (int *) malloc (sizeof(int)); <br>
+		  &nbsp &nbsp *px= 10; <br>
+		  &nbsp &nbsp return px; <br>
+		&nbsp } <br>
+       &nbsp Which of the above three functions are likely to cause problems with pointers? <br>
+	   
+	   Ans: a. Only P3<br>
+       &nbsp &nbsp &nbsp &nbsp b. Only P1 and P3<br>
+       &nbsp &nbsp &nbsp &nbsp c. Only P1 nd P2<br>
+       &nbsp &nbsp &nbsp &nbsp d. P1,P2 and P3<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) Only P1 nd P2</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">In P1, pointer variable x is a local variable to g(), 
+				and g() returns pointer to this variable. x may vanish after g() 
+				has returned as x exists on stack. So, &x may become invalid. In P2, 
+				pointer variable px is being assigned a value without 
+				allocating memory to it. P3 works perfectly fine. Memory is allocated 
+				to pointer variable px using malloc(). So, px exists on heap, it’s 
+				existence will 
+				remain in memory even after return of g() as it is on heap.</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que3. Which of the following is true about new when compared with malloc.</b><br>
+		&nbsp 1) new is an operator, malloc is a function <br>
+        &nbsp 2) new calls constructor, malloc doesn't <br>
+        &nbsp 3) new returns appropriate pointer, malloc returns void * and pointer needs to typecast to appropriate type. <br>
+
+	   Ans: a. 1 and 3<br>
+       &nbsp &nbsp &nbsp &nbsp b. 2 and 3<br>
+       &nbsp &nbsp &nbsp &nbsp c. 1 and 2<br>
+       &nbsp &nbsp &nbsp &nbsp d. All 1,2 and 3<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) All 1,2 and 3</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que4. What is the return type of malloc() and calloc()?</b><br>
+	   Ans: a. void*<br>
+       &nbsp &nbsp &nbsp &nbsp b. Pointer of allocated memory type<br>
+       &nbsp &nbsp &nbsp &nbsp c. void**<br>
+       &nbsp &nbsp &nbsp &nbsp d. int*<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) void*</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que5. Consider the following program, where are i,j and k are stored in memory?</b><br>
+		 &nbsp &nbsp int i; <br>
+		 &nbsp &nbsp int main() <br>
+		 &nbsp &nbsp { <br>
+		   &nbsp &nbsp &nbsp int j; <br>
+		   &nbsp &nbsp &nbsp int *k = (int*)malloc(sizeof(int)); <br>
+		 &nbsp &nbsp } <br>
+	   Ans: a. i, j and *k are stored in stack segment<br>
+       &nbsp &nbsp &nbsp &nbsp b.  i and j are stored in stack segment. *k is stored on heap<br>
+       &nbsp &nbsp &nbsp &nbsp c. i is stored in BSS part of data segment, j is stored in stack segment. *k is stored on heap.<br>
+       &nbsp &nbsp &nbsp &nbsp d. j is stored in BSS part of data segment, i is stored in stack segment. *k is stored on heap.<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) i is stored in BSS part of data segment, j is stored in stack segment. *k is stored on heap.
+</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> 
+		Explanation: 
+		a) i is global variable and it is uninitialized so it is stored on BSS(block started by symbol)part of Data Segment <br>
+		b) j is local in main() so it is stored in stack frame <br>
+		c) *k is dynamically allocated so it is stored on Heap Segment. <br>
+		A typical memory representation of C program consists of following sections. <br>
+		1. Text segment: A text segment , also known as a code segment or simply as text, is one of the sections of a program in an object file or in memory, which contains executable instructions. <br>
+		2. Initialized data segment: Initialized data segment, usually called simply the Data Segment. A data segment is a portion of virtual address space of a program, which contains the global variables and static variables that are initialized by the programmer. <br>
+		3. Uninitialized data segment: Uninitialized data segment, often called the “bss” segment, named after an ancient assembler operator that stood for “block started by symbol.” Data in this segment is initialized by the kernel to arithmetic 0 before the program starts executing. Uninitialized data starts at the end of the data segment and contains all global variables and static variables that are initialized to zero or do not have explicit initialization in source code. <br>
+		4. Stack: Stack, where automatic variables are stored, along with information that is saved each time a function is called. Each time a function is called, the address of where to return to and certain information about the caller’s environment, such as some of the machine registers, are saved on the stack. <br>
+		5. Heap: Heap is the segment where dynamic memory allocation usually takes place. The heap area begins at the end of the BSS segment and grows to larger addresses from there.) <br>
+				</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+	   <p id="mcq"><b>Que6. Point out the error in the following program.</b><br>
+	    &nbsp #include<stdio.h> <br>
+		&nbsp #include<stdlib.h> <br>
+		&nbsp int main() <br>
+		&nbsp {
+			&nbsp &nbsp &nbsp char *ptr; <br>
+			&nbsp &nbsp &nbsp *ptr = (char)malloc(30); <br>
+			&nbsp &nbsp &nbsp strcpy(ptr, "RAM"); <br>
+			&nbsp &nbsp &nbsp printf("%s", ptr); <br>
+			&nbsp &nbsp &nbsp free(ptr); <br>
+			&nbsp &nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+
+	   Ans: a. Error: in strcpy() statement<br>
+       &nbsp &nbsp &nbsp &nbsp b. Error: in *ptr = (char)malloc(30)<br>
+       &nbsp &nbsp &nbsp &nbsp c. Error: in free()<br>
+       &nbsp &nbsp &nbsp &nbsp d. No Error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Error: in *ptr = (char)malloc(30)</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que7. Point out the correct statement which correctly free the memory pointed to by 's' and 'p' in the following program?</b><br>
+		&nbsp #include<stdio.h> <br>
+		&nbsp #include<stdlib.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp struct ex <br>
+			&nbsp &nbsp { <br>
+				&nbsp &nbsp &nbsp int i; <br>
+				&nbsp &nbsp &nbsp float j; <br>
+				&nbsp &nbsp &nbsp char *s; <br>
+			&nbsp &nbsp }; <br>
+			&nbsp &nbsp struct ex *p; <br>
+			&nbsp &nbsp p = (struct ex *)malloc(sizeof(struct ex)); <br>
+			&nbsp &nbsp p->s = (char*)malloc(20); <br>
+			&nbsp &nbsp return 0;<br>
+		&nbsp }<br>
+
+	   Ans: a. free(p); , free(p->s);<br>
+       &nbsp &nbsp &nbsp &nbsp b. free(p->s); , free(p);<br>
+       &nbsp &nbsp &nbsp &nbsp c. free(p->s);<br>
+       &nbsp &nbsp &nbsp &nbsp d. free(p);<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) free(p->s); , free(p);</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que8. Point out the correct statement which correctly allocates memory dynamically for 2D array following program?</b><br>
+		&nbsp #include<stdio.h> <br>
+		&nbsp #include<stdlib.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp int *p, i, j; <br>
+			&nbsp &nbsp /* Add statement here */ <br>
+			&nbsp &nbsp for(i=0; i<3; i++) <br>
+			 &nbsp &nbsp{ <br>
+				&nbsp &nbsp for(j=0; j<4; j++) <br>
+				&nbsp &nbsp { <br>
+					&nbsp &nbsp &nbsp p[i*4+j] = i;<br>
+					&nbsp &nbsp &nbsp printf("%d", p[i*4+j]); <br>
+				&nbsp } <br>
+			&nbsp } <br>
+			&nbsp return 0; <br>
+		&nbsp } <br>
+
+		
+	   Ans: a. p=(int*)malloc(3,4);<br>
+       &nbsp &nbsp &nbsp &nbsp b. p=(int*)malloc(3*sizeof(int));<br>
+       &nbsp &nbsp &nbsp &nbsp c. p=malloc(3*4*sizeof(int));<br>
+       &nbsp &nbsp &nbsp &nbsp d. p=(int*)malloc(3*4*sizeof(int));<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) p=(int*)malloc(3*4*sizeof(int));</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que9. Which of the following is not a false statement about new operator?</b><br>
+	   Ans: a. It can’t be overloaded.<br>
+       &nbsp &nbsp &nbsp &nbsp b. It returns garbage value when memory allocation fails.<br>
+       &nbsp &nbsp &nbsp &nbsp c. It automatically computes the size of the data object.<br>
+       &nbsp &nbsp &nbsp &nbsp d. All of these<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) It automatically computes the size of the data object.
+</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que10. Which of the following is/are valid ways to allocate memory for an integer by dynamic memory allocation in CPP?</b><br>
+	   Ans: a. int *p=new int(100);<br>
+       &nbsp &nbsp &nbsp &nbsp b. int *p; p = new int; *p = 100;<br>
+       &nbsp &nbsp &nbsp &nbsp c. int *p = NULL; p = new int; *p=100;<br>
+       &nbsp &nbsp &nbsp &nbsp d. Only a and b<br>
+	   &nbsp &nbsp &nbsp &nbsp e. All of these<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">e) all of these</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que11. realloc(ptr, size), where size is zero means</b><br>
+	   Ans: a. Allocate a memory location with zero length<br>
+       &nbsp &nbsp &nbsp &nbsp b. Free the memory pointed to by ptr<br>
+       &nbsp &nbsp &nbsp &nbsp c. Undefined behaviour<br>
+       &nbsp &nbsp &nbsp &nbsp d. Doesn’t do any reallocation of ptr i.e. no operation<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Free the memory pointed to by ptr</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+	   
+	    
+       <!-- 
+	   <p id="mcq"><b>Que.</b><br>
+	   Ans: a. <br>
+       &nbsp &nbsp &nbsp &nbsp b. <br>
+       &nbsp &nbsp &nbsp &nbsp c. <br>
+       &nbsp &nbsp &nbsp &nbsp d. <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br> -->
+    </div>
+  <script type="text/javascript" src="mobile.js"></script>   
+    </body>	
+</html>
+
