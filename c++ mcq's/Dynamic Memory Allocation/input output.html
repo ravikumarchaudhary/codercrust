@@ -1,1 +1,414 @@
 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>C++ DMA input output mcq's</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+ background: white;
+}
+
+#mcq{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.mcq1 ul li a{
+ color: red;
+}
+
+.first{
+ color: red;
+}
+
+#wholefiile{
+ background: #F0EDED;
+}
+
+</style>
+
+</head>
+    <body> 
+		<header>
+			<img class="logo" alt="logo" src="../../logo.jpeg">
+			<nav>
+				<ul class="nav__links">
+					<li><a href="home.html"> Home</a></li>
+					<!--<li><a href="FrontPage.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li> -->
+					<li><div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false"> Courses</a>                          
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Data Structure</a></li><br>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					  </div></li>
+					<!-- <li><a href="TodoList/index.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li> -->
+					<li><a href="practice questions.html"> Practice</a></li>
+					
+					  <li><div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+							<ul class="dropdown-menu" aria-labelledby="Courses">
+								<li><a class="dropdown-item" href="#">Contest 1</a></li>
+								<li><a class="dropdown-item" href="#">Contest 2</a></li>
+								<li><a class="dropdown-item" href="#">Contest 3</a></li>
+								<li><a class="dropdown-item" href="#">Contest 4</a></li>
+							</ul>
+						  </div></li>
+					<li><a href="#"> About Us</a></li>
+					<li><a href="#"> Contact</a></li>
+					<li><a href="rowtable.html">Diamond</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#"><button>Login/Register</button></a>
+			<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+		   -->
+		</header>
+	<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+	</div>
+	<br>
+	<div id="wholefiile" class="wholefile">
+	   
+	   <p id="mcq"><b>Que1. Find output of the following code?</b><br>
+	    
+		&nbsp #include< bits/stdc++.h> <br>
+		&nbsp using namespace std; <br>
+		  
+		&nbsp void fun(int *a) <br>
+		&nbsp { <br>
+			&nbsp &nbsp a = (int*)malloc(sizeof(int)); <br>
+		&nbsp } <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp int *p; <br>
+			&nbsp &nbsp fun(p); <br>
+			&nbsp &nbsp *p = 6; <br>
+			&nbsp &nbsp printf("%dn",*p); <br>
+			&nbsp &nbsp return(0); <br>
+		&nbsp } <br>
+
+	   
+	   Ans: a. Compile time error<br>
+       &nbsp &nbsp &nbsp &nbsp b. Segmentation fault <br>
+       &nbsp &nbsp &nbsp &nbsp c. 6 will be printed<br>
+       &nbsp &nbsp &nbsp &nbsp d. Node of these<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Segmentation fault
+</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">The program is not valid. Try replacing 
+				“int *p;” with “int *p = NULL;” and it will try to 
+				dereference a null pointer. This is because fun() makes a 
+				copy of the pointer, so when malloc() is called, it is
+				setting the copied pointer to the memory location, not p.
+				p is pointing to random memory before and after the call 
+				to fun(), and when you dereference it, it will crash. If 
+				you want to add memory to a pointer from a function, you 
+				need to pass the address of the pointer (ie. double pointer).</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que2. What is the problem with following code?</b><br>
+		
+		&nbsp #include<stdio.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp int *p = (int *)malloc(sizeof(int)); <br>
+			&nbsp &nbsp &nbsp p = NULL; <br>
+			&nbsp &nbsp &nbsp free(p); <br>
+		&nbsp } <br>
+
+		
+	   Ans: a. Compiler Error: free can't be applied on NULL pointer<br>
+       &nbsp &nbsp &nbsp &nbsp b. Memory Leak<br>
+       &nbsp &nbsp &nbsp &nbsp c. Dangling Pointer<br>
+       &nbsp &nbsp &nbsp &nbsp d. The program may crash as free() is called for NULL pointer.<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Memory Leak</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+
+       <p id="mcq"><b>Que3. Predict the output?</b><br>
+	    &nbsp #include< bits/stdc++.h> <br>
+		&nbsp using namespace std; <br>
+		&nbsp class Test  <br>
+		&nbsp { <br>
+		  &nbsp &nbsp &nbsp int x; <br>
+		  &nbsp &nbsp Test() { x = 5;} <br>
+		&nbsp }; <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+		   &nbsp &nbsp &nbsp Test *t = new Test; <br>
+		   &nbsp &nbsp cout << t->x; <br>
+		&nbsp } <br>
+	    
+	   Ans: a. Compiler error<br>
+       &nbsp &nbsp &nbsp &nbsp b. 5<br>
+       &nbsp &nbsp &nbsp &nbsp c. Garbage Value<br>
+       &nbsp &nbsp &nbsp &nbsp d. 0<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) Compiler Error</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">Compiler error because by default all the members of a class remains private</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que4. What will be the output of the program?</b><br>
+		&nbsp #include<stdio.h> <br>
+		&nbsp #include<stdlib.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp int *p; <br>
+			&nbsp &nbsp &nbsp p = (int *)malloc(20); /* Assume p has address of 1314 */ <br>
+			&nbsp &nbsp &nbsp free(p); <br>
+			&nbsp &nbsp &nbsp printf("%u", p); <br>
+			&nbsp &nbsp &nbsp return 0; <br>
+		&nbsp }
+
+		
+	   Ans: a. 1314<br>
+       &nbsp &nbsp &nbsp &nbsp b. 1316<br>
+       &nbsp &nbsp &nbsp &nbsp c. Garbage Value<br>
+       &nbsp &nbsp &nbsp &nbsp d. Random address<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) 1314</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que5. Have a look at the following piecce of code and state the output.</b><br>
+	    &nbsp #include< bits/stdc++.h> <br>
+		&nbsp using namespace std; <br>
+		&nbsp class Test <br>
+		&nbsp { <br>
+		&nbsp &nbsp public: <br>
+		   &nbsp &nbsp Test() <br>
+		   &nbsp &nbsp { <br> 
+		   &nbsp &nbsp &nbsp cout << "Constructor called"; <br>
+		 &nbsp &nbsp } <br>
+		&nbsp }; <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp Test *t = (Test *) malloc(sizeof(Test));<br>
+			&nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+
+	   Ans: a. Constructor called<br>
+       &nbsp &nbsp &nbsp &nbsp b. Empty<br>
+       &nbsp &nbsp &nbsp &nbsp c. Compiler Error<br>
+       &nbsp &nbsp &nbsp &nbsp d. Runtime Error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Empty</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+	   
+	    
+       <!-- 
+	   <p id="mcq"><b>Que.</b><br>
+	   Ans: a. <br>
+       &nbsp &nbsp &nbsp &nbsp b. <br>
+       &nbsp &nbsp &nbsp &nbsp c. <br>
+       &nbsp &nbsp &nbsp &nbsp d. <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br><br> -->
+    </div>
+  <script type="text/javascript" src="mobile.js"></script>   
+    </body>	
+</html>
