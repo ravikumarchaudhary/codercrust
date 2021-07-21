@@ -85,8 +85,10 @@ header {
 
 .logo {
   cursor: pointer;
+  /*
   background-color: azure;
-  
+  */
+  background-color: #0088a9;
   height: 50px;
   width: 50px;
   
