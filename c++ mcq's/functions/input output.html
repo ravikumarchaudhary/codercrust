@@ -1,1 +1,904 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <title>C++ Strings input output mcq's</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body{
+ background: white;
+}
+
+#mcq{
+  font-family: 'Poppins', sans-serif;
+  color: black;
+}
+
+.mcq1 ul li a{
+ color: red;
+}
+
+.first{
+ color: red;
+}
+
+#wholefiile{
+ background: #F0EDED;
+}
+
+</style>
+
+</head>
+    <body> 
+		<header>
+			<img class="logo" alt="logo" src="../../logo.jpeg">
+			<nav>
+				<ul class="nav__links">
+					<li><a href="home.html">Home</a></li>
+					<!--<li><a href="FrontPage.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li> -->
+					<li><div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false"> Courses</a>                          
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Data Structure</a></li><br>
+							<li><a class="dropdown-item" href="NewCPluslanguage.html">C/C++ language</a></li>
+							<li><a class="dropdown-item" href="#">Python language</a></li>
+							<li><a class="dropdown-item" href="#">Java language</a></li>
+						</ul>
+					  </div></li>
+					<!-- <li><a href="TodoList/index.html"><i class="fa fa-book" aria-hidden="true"></i> Practice</a></li> -->
+					<li><a href="practice questions.html">Practice</a></li>
+					
+					  <li><div class="dropdown">
+						<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+							<ul class="dropdown-menu" aria-labelledby="Courses">
+								<li><a class="dropdown-item" href="#">Contest 1</a></li>
+								<li><a class="dropdown-item" href="#">Contest 2</a></li>
+								<li><a class="dropdown-item" href="#">Contest 3</a></li>
+								<li><a class="dropdown-item" href="#">Contest 4</a></li>
+							</ul>
+						  </div></li>
+					<li><a href="#"> About Us</a></li>
+					<li><a href="#"> Contact</a></li>
+					<li><a href="rowtable.html">Diamond</a></li>
+				</ul>
+			</nav>
+			<a class="cta" href="#"><button>Login/Register</button></a>
+			<!--
+			<a class="cta" href="#"><button>Register</button></a>
+			<a onclick="openNav()" class="menu" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="40px" height="40px"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M5 15h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0 4h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zm0-8h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1s.45 1 1 1zM4 6c0 .55.45 1 1 1h14c.55 0 1-.45 1-1s-.45-1-1-1H5c-.55 0-1 .45-1 1z"/></svg></a>
+		   -->
+		</header>
+	<div id="mobile__menu" class="overlay">
+			<a class="close" onclick="closeNav()">&times;</a>
+			<div class="overlay__content">
+				<a href="#">Home</a>
+				<a href="#">Practice</a>
+				<div class="dropdown">
+				<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Courses</a>
+					<ul class="dropdown-menu" aria-labelledby="Courses">
+						<li><a class="dropdown-item" href="#">C language</a></li>
+						<li><a class="dropdown-item" href="#">C++ language</a></li>
+						<li><a class="dropdown-item" href="#">Python language</a></li>
+						<li><a class="dropdown-item" href="#">Java language</a></li>
+					</ul>
+				  </div>
+				  <div class="dropdown">
+					<a class="btn dropdown-toggle" href="#" role="button" id="Courses" data-bs-toggle="dropdown" aria-expanded="false">Contest</a>
+						<ul class="dropdown-menu" aria-labelledby="Courses">
+							<li><a class="dropdown-item" href="#">Contest 1</a></li>
+							<li><a class="dropdown-item" href="#">Contest 2</a></li>
+							<li><a class="dropdown-item" href="#">Contest 3</a></li>
+							<li><a class="dropdown-item" href="#">Contest 4</a></li>
+						</ul>
+					  </div>
+				<a href="#">About Us</a>
+				<a href="#">Contact</a>
+				<a href="#">Diamond</a>
+			</div>
+	</div>
+	<br>
+	<div id="wholefiile" class="wholefile">
+	 <p id="mcq"><b>Que1. What will be the output of the following C++ code?</b><br>
+	 
+	   &nbsp #include< iostream> <br>
+	   &nbsp using namespace std; <br>
+	   &nbsp int main () <br>
+	   &nbsp { <br>
+		   &nbsp &nbsp &nbsp string str ("nobody does like this"); <br>
+		   &nbsp &nbsp &nbsp string key ("nobody"); <br>
+		   &nbsp &nbsp &nbsp size_t f; <br>
+		   &nbsp &nbsp &nbsp f = str.rfind(key); <br>
+		   &nbsp &nbsp &nbsp if (f != string::npos) <br>
+			   &nbsp &nbsp &nbsp &nbsp str.replace (f, key.length(), "everybody"); <br>
+		   &nbsp &nbsp &nbsp cout << str << endl; <br>
+		   &nbsp &nbsp &nbsp return 0; <br>
+	   &nbsp } <br>
+
+	 
+	   Ans: a. nobody does like this<br>
+       &nbsp &nbsp &nbsp &nbsp b. nobody <br>
+       &nbsp &nbsp &nbsp &nbsp c. everybody<br>
+       &nbsp &nbsp &nbsp &nbsp d. everybody does like this<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) everybody does like this</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		 <p id="mcq"><b>Que2. What will be the output of the following code?</b><br>
+		    &nbsp #include <iostream> <br>
+			&nbsp #include <string> <br>
+			&nbsp using namespace std; <br>
+			&nbsp int main ()  <br>
+			&nbsp { <br>
+				&nbsp &nbsp &nbsp string str ("Microsoft"); <br>
+				&nbsp &nbsp for (size_t i = 0; i < str.length();) <br>
+				&nbsp &nbsp { <br>
+					&nbsp &nbsp &nbsp cout << str.at(i-1); <br>
+				&nbsp &nbsp } <br>
+				&nbsp &nbsp v return 0; <br>
+			&nbsp } <br>
+
+	   Ans: a. M<br>
+       &nbsp &nbsp &nbsp &nbsp b. Microsoft<br>
+       &nbsp &nbsp &nbsp &nbsp c. Micro<br>
+       &nbsp &nbsp &nbsp &nbsp d. Runtime error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) Runtime error</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		 <p id="mcq"><b>Que3. Predict the output?</b><br>
+		&nbsp #include< stdio.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp char *p1="ABC"; <br>
+			&nbsp &nbsp &nbsp char *p2; <br>
+			&nbsp &nbsp &nbsp p2=p1; <br>
+			&nbsp &nbsp &nbsp p2="PQR"; <br>
+			&nbsp &nbsp &nbsp printf("%s",p1); <br>
+		&nbsp } <br>
+
+	   Ans: a. ABC<br>
+       &nbsp &nbsp &nbsp &nbsp b. PQR<br>
+       &nbsp &nbsp &nbsp &nbsp c. Nothing is Printed<br>
+       &nbsp &nbsp &nbsp &nbsp d. None of these<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) ABC</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que4. What is the output of C program with strings?</b><br>
+		&nbsp #include< stdio.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+		  &nbsp &nbsp &nbsp char str1[] = "JOHN"; <br>
+		  &nbsp &nbsp &nbsp char str2[20]; <br>
+		  &nbsp &nbsp &nbsp str2 = str1; <br>
+		  &nbsp &nbsp &nbsp printf("%s, str2"); <br>
+		  &nbsp &nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+		
+	   Ans: a. JOHN<br>
+       &nbsp &nbsp &nbsp &nbsp b. J<br>
+       &nbsp &nbsp &nbsp &nbsp c. JOHN\0<br>
+       &nbsp &nbsp &nbsp &nbsp d. Compiler error <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) Compiler error</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		
+		 <p id="mcq"><b>Que5. What will be the output of following code?</b><br>
+		&nbsp #include< stdio.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+		  &nbsp &nbsp &nbsp char c[] = "HelloWorld"; <br>
+		  &nbsp &nbsp &nbsp char *p = c; <br>
+		  &nbsp &nbsp &nbsp while(*++p) <br>
+		  &nbsp &nbsp &nbsp { <br>
+		    &nbsp &nbsp &nbsp &nbsp printf("%c",*p); <br>
+		  &nbsp &nbsp &nbsp } <br>
+		  &nbsp &nbsp &nbsp return 0; <br>
+		&nbsp} <br>
+	   Ans: a. elloWorld<br>
+       &nbsp &nbsp &nbsp &nbsp b. HelloWorld<br>
+       &nbsp &nbsp &nbsp &nbsp c. Hello<br>
+       &nbsp &nbsp &nbsp &nbsp d. World<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) elloWorld</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que6. What is the output of the following piecce of code?</b><br>
+		&nbsp #include< iostream> <br>
+        &nbsp using namespace std; <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp char c[] = "HELLOWORLD!"; <br>
+			&nbsp &nbsp &nbsp char *p = c; <br>
+			&nbsp &nbsp &nbsp cout<< *p<< " "<< *(p + p[3] - p[1]); <br>
+		&nbsp } <br>
+ 
+	   Ans: a. H !<br>
+       &nbsp &nbsp &nbsp &nbsp b. H O<br>
+       &nbsp &nbsp &nbsp &nbsp c. Compiler Error<br>
+       &nbsp &nbsp &nbsp &nbsp d. H<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) H O</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		 <p id="mcq"><b>Que7. What is the output of the following piece of code?</b><br>
+		&nbsp #include< iostream> <br>
+		&nbsp using namespace std;<br>
+		&nbsp int main() <br>
+		&nbsp {  <br>
+			&nbsp &nbsp &nbsp char a[2][3][3] = {'h','e','l','l','o','w','o','r','l', 'd'};  <br>
+			&nbsp &nbsp &nbsp printf("%s ", **a); <br>
+			&nbsp &nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+
+	   Ans: a. Prints "hello" on the screen<br>
+       &nbsp &nbsp &nbsp &nbsp b. Prints "helloworld" on the screen<br>
+       &nbsp &nbsp &nbsp &nbsp c. Prints "helloworld" followed by garbage characters on the screen<br>
+       &nbsp &nbsp &nbsp &nbsp d. Results in a compiler error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Prints "helloworld" on the screen</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		 <p id="mcq"><b>Que8. Predict the output?</b><br>
+		&nbsp #include< iostream> <br>
+		&nbsp using namespace std; <br>
+		&nbsp int fun(char *str1) <br>
+		&nbsp { <br>
+		  &nbsp &nbsp &nbsp char *str2 = str1; <br> 
+		  &nbsp &nbsp &nbsp while(*++str1); <br>
+		  &nbsp &nbsp &nbsp return (str1-str2); <br>
+		&nbsp } <br>
+		&nbsp int main() <br> 
+		&nbsp { <br>
+		  &nbsp &nbsp &nbsp char *str = "Hello World"; <br>
+		  &nbsp &nbsp &nbsp cout<< fun(str); <br>
+		  &nbsp &nbsp &nbsp return 0;  <br>
+		&nbsp }  <br>
+
+	   Ans: a. 10<br>
+       &nbsp &nbsp &nbsp &nbsp b. 9<br>
+       &nbsp &nbsp &nbsp &nbsp c. 11<br>
+       &nbsp &nbsp &nbsp &nbsp d. Random Error<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) 11</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		
+		 <p id="mcq"><b>Que9. Assume that a character takes 1 byte. Output of following program?</b><br>
+		&nbsp #include< iostream> <br>
+		&nbsp using namespace std; <br>
+		&nbsp int main()  <br>
+		&nbsp {  <br>
+			&nbsp &nbsp &nbsp char str[20] = "Hello World";  <br>
+			&nbsp &nbsp &nbsp cout<< sizeof(str); <br>
+			&nbsp &nbsp &nbsp return 0;  <br>
+		&nbsp }  <br>
+
+	   Ans: a. 11<br>
+       &nbsp &nbsp &nbsp &nbsp b. 10<br>
+       &nbsp &nbsp &nbsp &nbsp c. 20<br>
+       &nbsp &nbsp &nbsp &nbsp d. Garbage value<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) 20</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		
+		 <p id="mcq"><b>Que10.</b><br>
+		 
+		In below program, what would you put in place of “?” to print “World”?
+
+		&nbsp #include< stdio.h> <br> 
+		&nbsp int main()  <br>
+		&nbsp {  <br>
+		 &nbsp &nbsp &nbsp char arr[] = "HelloWorld";  <br>
+		  &nbsp &nbsp &nbsp printf("%s", ?);  <br>
+		  &nbsp &nbsp &nbsp return 0;  <br>
+		&nbsp } <br> 
+		 
+	   Ans: a. arr<br>
+       &nbsp &nbsp &nbsp &nbsp b. (arr+5)<br>
+       &nbsp &nbsp &nbsp &nbsp c. (arr+4)<br>
+       &nbsp &nbsp &nbsp &nbsp d. Not Possible<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) (arr+5)</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		 <p id="mcq"><b>Que11. What will be the output of the following piece of code?</b><br>
+		&nbsp #include< stdio.h> <br>
+		&nbsp #include< string.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp char p[] = "Hello World"; <br>
+			&nbsp &nbsp &nbsp char t; <br>
+			&nbsp &nbsp &nbsp int i, j; <br>
+			&nbsp &nbsp &nbspfor(i=0,j=strlen(p); i< j; i++) <br>
+			&nbsp { <br>
+				&nbsp &nbsp &nbsp t = p[i]; <br>
+				&nbsp &nbsp &nbsp p[i] = p[j-i]; <br>
+				&nbsp &nbsp &nbsp p[j-i] = t; <br>
+			&nbsp} <br>
+			&nbsp &nbsp printf("%s", p); <br>
+			 &nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+
+	   Ans: a. dlroW olleH <br>
+       &nbsp &nbsp &nbsp &nbsp b. Nothing is printed on the screen<br>
+       &nbsp &nbsp &nbsp &nbsp c. HellodlroW<br>
+       &nbsp &nbsp &nbsp &nbsp d. HellodlroW<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) Nothing is Printed on the screen</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que12. Which of the following function is correct that finds the length of a string?</b><br>
+	   Ans: <br>&nbsp a.
+        &nbsp int xstrlen(char *s) <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp int length=0; <br>
+			&nbsp &nbsp &nbsp while(*s!='\0') <br>
+			&nbsp &nbsp &nbsp { length++; s++; } <br>
+			&nbsp &nbsp &nbsp return (length); <br>
+		&nbsp } <br>
+
+       &nbsp b. 
+	   &nbsp int xstrlen(char s) <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp int length=0; <br>
+			&nbsp &nbsp &nbsp while(*s!='\0') <br>
+			&nbsp &nbsp &nbsp  length++; s++;  <br>
+			&nbsp &nbsp &nbsp return (length); <br>
+		&nbsp } <br>
+		
+       &nbsp  c. 
+	   &nbsp int xstrlen(char *s) <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp int length=0; <br>
+			&nbsp &nbsp &nbsp while(*s!='\0') <br>
+			&nbsp &nbsp &nbsp  length++; s++; <br>
+			&nbsp &nbsp &nbsp return (length); <br>
+		&nbsp } <br>
+	   
+       &nbsp d. 
+	   &nbsp int xstrlen(char *s) <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp int length=0; <br>
+			&nbsp &nbsp &nbsp while(*s!='\0') <br>
+			&nbsp &nbsp &nbsp    s++; <br>
+			&nbsp &nbsp &nbsp return (length); <br>
+		&nbsp } <br>
+	 
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">a) 
+		&nbsp int xstrlen(char *s) <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp int length=0; <br>
+			&nbsp &nbsp &nbsp while(*s!='\0') <br>
+			&nbsp &nbsp &nbsp { length++; s++; } <br>
+			&nbsp &nbsp &nbsp return (length); <br>
+		&nbsp }</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que13. What will be the output of the program?</b><br>
+		&nbsp #include< stdio.h> <br>
+		&nbsp #include< string.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp char str1[20] = "Hello", str2[20] = " World"; <br>
+			&nbsp &nbsp &nbsp printf("%s\n", strcpy(str2, strcat(str1, str2))); <br>
+			&nbsp &nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+
+	   Ans: a. Hello<br>
+       &nbsp &nbsp &nbsp &nbsp b. World<br>
+       &nbsp &nbsp &nbsp &nbsp c. Hello World<br>
+       &nbsp &nbsp &nbsp &nbsp d. WorldHello<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">c) Hello World</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que14. What will be the output of the Program?</b><br>
+		&nbsp #include< stdio.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp printf(5+"Good Morning\n"); <br>
+			&nbsp &nbsp &nbsp return 0; <br>
+		&nbsp } <br>
+
+	   Ans: a. Good Morning<br>
+       &nbsp &nbsp &nbsp &nbsp b. Good<br>
+       &nbsp &nbsp &nbsp &nbsp c. M<br>
+       &nbsp &nbsp &nbsp &nbsp d. Morning<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">d) Morning</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		<p id="mcq"><b>Que15. What will be the output of the Program?</b><br>
+		&nbsp #include< stdio.h> <br>
+		&nbsp int main() <br>
+		&nbsp { <br>
+			&nbsp &nbsp &nbsp int i; <br>
+			&nbsp &nbsp &nbsp char a[] = "\0"; <br>
+			&nbsp &nbsp &nbsp if(printf("%s", a)) <br>
+				&nbsp &nbsp &nbsp &nbsp printf("The string is not empty\n"); <br>
+			&nbsp &nbsp &nbsp else <br>
+				&nbsp &nbsp &nbsp &nbsp printf("The string is empty\n"); <br>
+			&nbsp &nbsp &nbsp return 0; <br>
+		} <br>
+
+	   Ans: a. The string is not empty<br>
+       &nbsp &nbsp &nbsp &nbsp b. The string is empty<br>
+       &nbsp &nbsp &nbsp &nbsp c. No output<br>
+       &nbsp &nbsp &nbsp &nbsp d. 0<br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#">b) The string is empty</a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br>
+		
+		 
+       <!-- 
+	   <p id="mcq"><b>Que.</b><br>
+	   Ans: a. <br>
+       &nbsp &nbsp &nbsp &nbsp b. <br>
+       &nbsp &nbsp &nbsp &nbsp c. <br>
+       &nbsp &nbsp &nbsp &nbsp d. <br>
+	   <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Show Answer
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav> 
+
+        <nav class="mcq1">
+			<ul class="menu1">
+			 <li>  
+			  <label for="btn-2" class="first">Explanation
+				 <span class="fas fa-caret-down"> </span>
+			  </label>
+			  <input type="checkbox" id="btn-2">
+			  <ul>
+				<li> <a href="#"> </a></li>
+			  </ul>
+			 </li>
+			 
+			</ul>
+        </nav>		
+        </p>			
+        <br> -->
+    </div>
+  <script type="text/javascript" src="mobile.js"></script>   
+    </body>	
+</html>
+
